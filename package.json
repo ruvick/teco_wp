@@ -1,7 +1,7 @@
 {
-  "name": "smartgardens",
+  "name": "teco",
   "version": "1.0.1",
-  "description": "smartgardens",
+  "description": "teco",
   "main": "index.php",
   "scripts": {
     "test": "editorconfig-checker",
