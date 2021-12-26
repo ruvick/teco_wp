@@ -10,16 +10,20 @@ get_header(); ?>
 <?php get_template_part('template-parts/header-section');?>
 
 <main class="page">
-  <section class="content">
-  <div class="container">
+<section id="title-navigation" class="title-navigation">
+        <div class="_container">
 
-  <?php
+			<?php
 			if ( function_exists('yoast_breadcrumb') ) {
-				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );  
+				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 			}
 			?> 
+				<h1 class="title-navigation__title"><?php the_title();?></h1>
 
-	<h1><? the_title();?></h1> 
+			</div>
+		</section>
+  <section class="content">
+  <div class="_container">
 
   <ul> 
 	  <? $org = carbon_get_theme_option("as_company"); if (!empty($org)){?><li>Организация: <strong><? echo $org; ?></strong></li><?}?> 

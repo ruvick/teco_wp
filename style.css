@@ -1,4 +1,4 @@
-﻿/*
+/*
 Theme Name: teco
 Theme URI: 
 Author: ruvick
@@ -4736,121 +4736,146 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 /* Popup JS */
 .popup {
-  -webkit-overflow-scrolling: touch;
-  z-index: 500000;
-  padding: 30px 10px;
   position: fixed;
   top: 0px;
   left: 0;
+  z-index: 500000;
   width: 100%;
   height: 100%;
+  padding: 30px 10px;
   -webkit-transition: visibility 0.8s ease 0s;
   -o-transition: visibility 0.8s ease 0s;
   transition: visibility 0.8s ease 0s;
-  visibility: hidden; }
+  visibility: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
 .popup::before {
   content: "";
-  background-color: rgba(0, 0, 0, 0.9);
   position: fixed;
-  width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
   opacity: 0;
   -webkit-transition: opacity 0.8s ease 0s;
   -o-transition: opacity 0.8s ease 0s;
-  transition: opacity 0.8s ease 0s; }
+  transition: opacity 0.8s ease 0s;
+}
+
 .popup.show {
   visibility: visible;
-  overflow: auto; }
+  overflow: auto;
+}
+
 .popup.show::before {
-  opacity: 1; }
+  opacity: 1;
+}
+
 .popup.show .popup__body {
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1); }
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
 .popup._active {
   overflow: auto;
-  visibility: visible; }
+  visibility: visible;
+}
+
 .popup._active::before {
-  opacity: 1; }
+  opacity: 1;
+}
+
 .popup._active .popup__body {
+  border-radius: 5px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
   -webkit-transition: all 0.3s ease 0.2s;
   -o-transition: all 0.3s ease 0.2s;
   transition: all 0.3s ease 0.2s;
-  -webkit-transform: scale(1);
-  -ms-transform: scale(1);
-  transform: scale(1);
-  border-radius: 3px; }
+}
+
 .popup__content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  min-height: 100%;
-  -webkit-box-flex: 1;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto;
-  width: 100%;
-  display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: center; }
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  width: 100%;
+  min-height: 100%;
+}
+
 .popup__body {
   max-width: 800px;
   width: 100%;
+  background: #EBEFE2;
   -webkit-transform: scale(0);
-  -ms-transform: scale(0);
-  transform: scale(0);
+      -ms-transform: scale(0);
+          transform: scale(0);
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
-  background: #EBEFE2;
-  overflow: hidden; }
+  overflow: hidden;
+}
+
 .popup__close {
-  width: 20px;
-  height: 20px;
   position: absolute;
   top: 18px;
   right: 15px;
   cursor: pointer;
   z-index: 30;
-  background: url("img/close.svg") 0 0 no-repeat; }
+  width: 20px;
+  height: 20px;
+  background: url("img/icons/close.svg") 0 0 no-repeat;
+}
+
+.popup__img {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
 .popup__form-block {
-  width: 100%;
-  padding: 35px; }
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 65%;
+          flex: 0 1 65%;
+  padding: 35px;
+}
+
 .popup__form-block h2 {
-  margin: 0 0 20px 0; }
-.popup__form-block p {
-  margin: 0 0 30px 0; }
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.popup__notific {
+  margin-bottom: 35px;
+}
+
 .popup__form-input {
-  width: 100%;
-  min-height: 45px;
-  padding: 0 10px;
-  border: 1px solid lightgray;
-  border-radius: 3px;
-  margin-bottom: 25px; }
+  height: 46px;
+  background: #F6F8F1;
+  border: 1px solid #737373;
+  margin-bottom: 25px;
+}
+
+.popup__policy {
+  margin-bottom: 25px;
+}
+
 .popup__form-btn {
-  display: inline-block;
-  padding: 12px 28px;
   font-size: 18px;
-  font-family: Lato-Light, sans-serif;
-  text-transform: uppercase;
-  color: #d3820f;
-  border: 1px solid #d3820f; 
-  cursor: pointer; }
-.popup__form-btn:hover {
-  color: #fff;
-  background-color: #d3820f; }
-.popup__item img {
-  width: 40%; }
+  min-width: 160px;
+}
 .SendetMsg {
   padding: 10px 0;
   text-align: center;

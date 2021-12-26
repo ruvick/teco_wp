@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<?php get_template_part('template-parts/header-section');?>
+<?php get_template_part('template-parts/header-index-section');?>
 
 <main class="page">
 
@@ -11,7 +11,7 @@
 				<!-- <div class="nuar_blk"></div> -->
 				<div class="slider-bg__container _container">
 					<h1 class="slider-bg__title">
-						Поставка конвейерных лент <br>
+						Поставка конвейерных лент <br> 
 						и производство <br>
 						<span>
 							КОНВЕЙЕРНОГО <br> 

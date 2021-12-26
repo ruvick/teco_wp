@@ -4,8 +4,8 @@
 
 <main class="page">
 
-	<section class="category">  
-		<div class="container">
+<section id="title-navigation" class="title-navigation">
+        <div class="_container">
 
 			<!-- Хлебные крошки -->
 			<?php

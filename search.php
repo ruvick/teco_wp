@@ -12,8 +12,8 @@ get_header(); ?>
 
 <main id="primary" class="page site-main"> 
 
-	<section class="content"> 
-		<div class="container">
+<section id="title-navigation" class="title-navigation">
+        <div class="_container">
 
 		<?php get_template_part('template-parts/benefit-slider');?>
 
@@ -89,7 +89,7 @@ get_header(); ?>
 				// echo "</pre>";
 			?>
 
-			<h1>Результаты поиска</h1>
+			<h1 class="title-navigation__title">Результаты поиска</h1>
 
 			<div class="prod-card d-flex">
 

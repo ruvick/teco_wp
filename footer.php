@@ -3,15 +3,10 @@
 
 		<div class="footer__row d-flex">
 
-			<a href="index.html" class="logo-icon footer__logo">
-				<!-- <? bloginfo("url"); ?> -->
-			</a>
+			<a href="<? bloginfo("url"); ?>" class="logo-icon footer__logo"></a>
 
-			<ul class="menu-list footer__menu-list d-flex">
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Каталог</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Наши работы</a></li>
-				<li class="menu-list__item"><a href="#" class="menu-list__link">Контакты</a></li>
-			</ul>
+			<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu-list footer__menu-list d-flex',
+			    'container_class' => 'menu-list footer__menu-list d-flex','container' => false )); ?>
 
 			<div class="contacts d-flex">
 				<a href="tel:88003454567" class="contacts__phone">8 800 345-45-67</a>

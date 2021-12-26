@@ -1,7 +1,7 @@
-<header id="header" class="header">
+<header id="header" class="header header_index">
   <div class="header__container _container">
 
-    <div class="header__row d-flex">
+    <div class="header__row header__row_index d-flex">
 
       <a href="<? bloginfo("url"); ?>" class="logo-icon header__logo"></a>
 
@@ -33,6 +33,6 @@
 <!-- Мобильное меню -->
 <div class="mob-menu header__mob-menu">
   <?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'mob-menu__list',
-		'container_class' => 'mob-menu__list','container' => false )); ?> 
+		'container_class' => 'mob-menu__list','container' => false )); ?>
   <a href="#callback" class="header__popup-link header__popup-link_mob _popup-link">ЗАКАЗАТЬ ЗВОНОК</a>
 </div>

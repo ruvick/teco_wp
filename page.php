@@ -17,10 +17,10 @@ get_header(); ?>
 
 <?php get_template_part('template-parts/header-section');?>
 
-	<main id="primary" class="page site-main"> 
+	<main class="page">
 
-		<section class="content"> 
-			<div class="container">
+			<section id="title-navigation" class="title-navigation">
+        <div class="_container">
 
 			<?php
 			if ( function_exists('yoast_breadcrumb') ) {
@@ -28,8 +28,14 @@ get_header(); ?>
 			}
 			?> 
 
+				<h1 class="title-navigation__title"><?php the_title();?></h1>
+
+			</div>
+		</section> 
+
+		<section class="content"> 
+			<div class="_container">
 			<?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-				<h1><?php the_title();?></h1>
 					<?php the_content();?>
 					<?php endwhile;?>
 				<?php endif; ?> 
