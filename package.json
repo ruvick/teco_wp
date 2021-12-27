@@ -14,6 +14,7 @@
     "send_index": "scp -C index.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_func": "scp -C functions.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_futt": "scp -C footer.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
+    "send_filds": "scp -C themes-fields.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "mk_part_carbon": "ssh tec1687636@ssh.tec1687636.nichost.ru \"mkdir -p teko.msk.ru//docs/wp-content/themes/teco/inc\"",
     "send_carbon": "scp -C -r inc tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_carbon_fild": "scp -C -r inc/custom-fields-options tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/inc/",

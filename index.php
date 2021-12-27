@@ -7,19 +7,27 @@
 <section id="slider-main" class="slider-main">
 	<div class="slider-bg-wrap">
 		<div class="slider-bg _swiper">
-			<div class="slider-bg__slide slider__slide slider-main__slide">
+		<?
+		$pict = carbon_get_theme_option('slider_index');
+		if ($pict) {
+			$pictIndex = 0;
+			foreach ($pict as $item) { 
+		?>
+			<div class="slider-bg__slide slider__slide slider-main__slide" style="background-image: url(<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>);">
 				<!-- <div class="nuar_blk"></div> -->
 				<div class="slider-bg__container _container">
-					<h1 class="slider-bg__title">
-						Поставка конвейерных лент <br> 
-						и производство <br>
+					<h1 class="slider-bg__title"><? echo $item['slider_title']; ?>
 						<span>
-							КОНВЕЙЕРНОГО <br> 
-							ОБОРУДОВАНИЯ
+						<? echo $item['slider_subtitle']; ?>
 						</span>
 					</h1>
 				</div>
 			</div>
+		<?
+				$pictIndex++;
+			}
+		}
+		?>
 		</div>
 		<div class="slider-bg__swiper-button-block swiper-button-block">
 			<!-- <div class="_container"> -->
@@ -397,71 +405,31 @@
 <div class="_container">
 <h2 class="team__title">Наша команда</h2>
 <div class="team__row">
-
-<div class="team__column">
-	<div class="team__card">
-		<div class="team__card-img">
-			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/01.jpg?_v=1639983180738" alt=""></picture>
-		</div>
-		<div class="team__card-descp">
-			<h4 class="team__card-title">Сергей Ильин</h4>
-			<p class="team__card-position">Руководитель</p>
-		</div>
-		<div class="team__card-nav">
-			<a href="tel:79004529033" class="team__card-nav-phone">7 900 452-90-33</a>
-			<a href="mailto:info@mail.ru" class="team__card-nav-email">info@mail.ru</a>
-		</div>
-	</div>
-</div>
-
-<div class="team__column">
-	<div class="team__card">
-		<div class="team__card-img">
-			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/02.jpg?_v=1639983180738" alt=""></picture>
-		</div>
-		<div class="team__card-descp">
-			<h4 class="team__card-title">Анна Тарасова</h4>
-			<p class="team__card-position">Руководитель</p>
-		</div>
-		<div class="team__card-nav">
-			<a href="tel:79004529033" class="team__card-nav-phone">7 900 452-90-33</a>
-			<a href="mailto:info@mail.ru" class="team__card-nav-email">info@mail.ru</a>
-		</div>
-	</div>
-</div>
-
-<div class="team__column">
-	<div class="team__card">
-		<div class="team__card-img">
-			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/03.jpg?_v=1639983180738" alt=""></picture>
-		</div>
-		<div class="team__card-descp">
-			<h4 class="team__card-title">Юрий Власов</h4>
-			<p class="team__card-position">Руководитель</p>
-		</div>
-		<div class="team__card-nav">
-			<a href="tel:79004529033" class="team__card-nav-phone">7 900 452-90-33</a>
-			<a href="mailto:info@mail.ru" class="team__card-nav-email">info@mail.ru</a>
-		</div>
-	</div>
-</div>
-
-<div class="team__column">
-	<div class="team__card">
-		<div class="team__card-img">
-			<picture><source srcset="<?php echo get_template_directory_uri();?>/img/team/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/team/04.jpg?_v=1639983180738" alt=""></picture>
-		</div>
-		<div class="team__card-descp">
-			<h4 class="team__card-title">Мария Свечкарь</h4>
-			<p class="team__card-position">Руководитель</p>
-		</div>
-		<div class="team__card-nav">
-			<a href="tel:79004529033" class="team__card-nav-phone">7 900 452-90-33</a>
-			<a href="mailto:info@mail.ru" class="team__card-nav-email">info@mail.ru</a>
-		</div>
-	</div>
-</div>
-
+<? $team = carbon_get_theme_option('complex_team');
+	if ($team) {
+		$teamIndex = 0;
+		foreach ($team as $item) {
+			?>
+			<div class="team__column">
+				<div class="team__card">
+					<div class="team__card-img">
+						<img src="<?php echo wp_get_attachment_image_src($item['img_team'], 'large')[0]; ?>" alt="">					</div>
+					<div class="team__card-descp">
+						<h4 class="team__card-title"><? echo $item['name_team']; ?></h4>
+						<p class="team__card-position"><? echo $item['special_team']; ?></p>
+					</div>
+					<div class="team__card-nav">
+						<a href="<? echo preg_replace('/[^0-9]/', '', $item['phone_team']); ?>" class="team__card-nav-phone"><? echo $item['phone_team']; ?></a>
+						<a href="mailto:<? echo $item['e-mail_team']; ?>" class="team__card-nav-email"><? echo $item['e-mail_team']; ?></a>
+					</div>
+				</div>
+			</div>
+			<?
+			$teamIndex++; 
+			if ($teamIndex == 4) break;
+		}
+	}
+	?>
 </div>
 </div>
 </section>
