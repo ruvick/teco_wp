@@ -23,9 +23,13 @@
 
         	<div class="catalog__wrap">
 				<?
+				
+					$category = get_queried_object();
+					$current_cat_id = $category->term_id;
+
 					$my_posts = get_posts([
-						'numberposts' => 3,
-						'category' => $args['cat']->term_id,
+						'numberposts' => -1,
+						'category' => $current_cat_id,
 						'orderby' => 'date',
 						'order' => 'DESC',
 					]);
