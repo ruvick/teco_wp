@@ -4564,6 +4564,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 40px;
 }
 
+.product-sec-charect__wrap-table table,
 .product-sec__row-table table,
 .product-sec__table {
   width: 100%;
@@ -4571,6 +4572,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 30px;
 }
 
+.product-sec-charect__wrap-table table thead,
 .product-sec__row-table table thead,
 .product-sec__table-thead {
   font-size: 16px;
@@ -4580,6 +4582,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: #A3A3A3;
 }
 
+.product-sec-charect__wrap-table table thead th,
 .product-sec__row-table table thead th,
 .product-sec__row-table table thead td,
 .product-sec__table-thead-td {
@@ -4587,11 +4590,17 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-right: 0.5px solid #8C8B8B;
 }
 
+.product-sec-charect__wrap-table table thead td {
+  padding: 5px 25px;
+}
+
+.product-sec-charect__wrap-table table tbody,
 .product-sec__row-table table tbody,
 .product-sec__table-tbody {
   background: white;
 }
 
+.product-sec-charect__wrap-table table tbody tr,
 .product-sec__row-table table tbody tr,
 .product-sec__table-tbody-tr {
   font-size: 16px;
@@ -4600,6 +4609,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border: 0.5px solid #8c8b8b;
 }
 
+.product-sec-charect__wrap-table table tbody td,
 .product-sec__row-table table tbody td,
 .product-sec__table-tbody-td {
   padding: 5px 10px;
@@ -4607,6 +4617,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border-bottom: 0.5px solid #8c8b8b;
 }
 
+.product-sec-charect__wrap-table table tbody td:first-child,
 .product-sec__row-table table tbody td:first-child,
 .product-sec__table-tbody-td:first-child {
   border-left: 0.5px solid #8c8b8b;
@@ -4914,7 +4925,6 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   float: left;
   margin: 10px 0; }
 /* Popup JS End*/
-
 
 
 
