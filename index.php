@@ -307,67 +307,42 @@
 	<div class="_container">
 		<h2 class="completed-projects__title">Осуществленные проекты</h2>
 		<div class="completed-projects__row">
+		<?php 
+			$posts = get_posts( array(
+				'numberposts' => 4,
+				'category'    => 4,
+				'orderby'     => 'date',
+				// 'orderby'     => '612,616,626',
+				'order'       => 'DESC',
+				// 'include'     => '612,608,606',
+				'include'     => array(),
+				'exclude'     => array(),
+				'meta_key'    => '',
+				'meta_value'  =>'',
+				'post_type'   => 'post',
+				'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
+			) );
 
-			<div class="completed-projects__column">
-				<div class="completed-projects__card">
-					<div class="completed-projects__card-img">
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/project/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/project/01.jpg?_v=1639983180738" alt=""></picture>
-					</div>
-					<div class="completed-projects__card-descp completed-projects__card-descp_red">
-						<h5 class="completed-projects__card-descp-title">
-							Стыковка конвейерной ленты <br>
-							на Уренгойской шахте
-						</h5>
-						<a href="#" class="completed-projects__card-descp-link">Подробнее...</a>
-					</div>
-				</div>
-			</div>
+			$result = wp_get_recent_posts( $args );
 
-			<div class="completed-projects__column">
-				<div class="completed-projects__card">
-					<div class="completed-projects__card-img">
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/project/02.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/project/02.jpg?_v=1639983180738" alt=""></picture>
+			foreach( $posts as $post ){
+		?>
+		<div class="completed-projects__column">
+  		<div class="completed-projects__card">
+    		<div class="completed-projects__card-img">
+					<picture>
+						<?php echo get_the_post_thumbnail();?>
+					</picture>    	
 					</div>
-					<div class="completed-projects__card-descp">
-						<h5 class="completed-projects__card-descp-title">
-							Установка и пусконаладка конвейерной <br>
-							установки
-						</h5>
-						<a href="#" class="completed-projects__card-descp-link">Подробнее...</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="completed-projects__column">
-				<div class="completed-projects__card">
-					<div class="completed-projects__card-img">
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/project/03.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/project/03.jpg?_v=1639983180738" alt=""></picture>
-					</div>
-					<div class="completed-projects__card-descp">
-						<h5 class="completed-projects__card-descp-title">
-							Установка и запуск пруткового <br>
-							транспортера
-						</h5>
-						<a href="#" class="completed-projects__card-descp-link">Подробнее...</a>
-					</div>
-				</div>
-			</div>
-
-			<div class="completed-projects__column">
-				<div class="completed-projects__card">
-					<div class="completed-projects__card-img">
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/project/04.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/project/04.jpg?_v=1639983180738" alt=""></picture>
-					</div>
-					<div class="completed-projects__card-descp">
-						<h5 class="completed-projects__card-descp-title">
-							Замена модульной конвейерной <br>
-							ленты
-						</h5>
-						<a href="#" class="completed-projects__card-descp-link">Подробнее...</a>
-					</div>
-				</div>
-			</div>
-
+    		<div class="completed-projects__card-descp completed-projects__card-descp_red">
+      		<h5 class="completed-projects__card-descp-title"><?php echo $post->post_title?></h5>
+      		<a href="<?php echo get_permalink();?>" class="completed-projects__card-descp-link">Подробнее...</a>
+    		</div>
+  		</div>
+		</div>	
+	<?php 
+		} 
+	?>
 		</div>
 
 		<div class="completed-projects__help help-wrap">
@@ -388,7 +363,7 @@
 			</div>
 			<div class="help-wrap__btn">
 				<a href="#callback" class="help-wrap__btn-link _popup-link btn">Заявка на расчет стоимости</a>
-				<a href="#" class="help-wrap__btn-link _popup-link btn btn_grey">Смотреть все проекты</a>
+				<a href="<?php echo get_category_link(4);?>" class="help-wrap__btn-link _popup-link btn btn_grey">Смотреть все проекты</a>
 			</div>
 		</div>
 
