@@ -192,6 +192,12 @@ h2 {
   line-height: 120%;
 }
 
+.sub_position_head {
+  font-size: 28px;
+  color: #AE0018;
+  margin: 20px 0 40px 0;
+}
+
 h3 {
   font-size: 28px;
   font-weight: 500;
@@ -4185,7 +4191,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .products-sec__card-descp-list-item {
   font-size: 14px;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 }
 
 .products-sec__card-descp-list-item:last-child {
@@ -4539,24 +4545,33 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
           flex: 0 1 45%;
 }
 
+.product-sec__descp h3,
 .product-sec__descp-title {
   margin-bottom: 25px;
+  font-size: 22px;
 }
 
+.product-sec__descp p,
 .product-sec__descp-text {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
 .product-sec__descp-list {
   margin-bottom: 30px;
 }
 
+.product-sec__row-table {
+  margin-bottom: 40px;
+}
+
+.product-sec__row-table table,
 .product-sec__table {
   width: 100%;
   color: #000;
   margin-bottom: 30px;
 }
 
+.product-sec__row-table table thead,
 .product-sec__table-thead {
   font-size: 16px;
   line-height: 23px;
@@ -4565,15 +4580,19 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   background: #A3A3A3;
 }
 
+.product-sec__row-table table thead th,
+.product-sec__row-table table thead td,
 .product-sec__table-thead-td {
   padding: 5px 10px;
   border-right: 0.5px solid #8C8B8B;
 }
 
+.product-sec__row-table table tbody,
 .product-sec__table-tbody {
   background: white;
 }
 
+.product-sec__row-table table tbody tr,
 .product-sec__table-tbody-tr {
   font-size: 16px;
   line-height: 23px;
@@ -4581,12 +4600,14 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   border: 0.5px solid #8c8b8b;
 }
 
+.product-sec__row-table table tbody td,
 .product-sec__table-tbody-td {
   padding: 5px 10px;
   border-right: 0.5px solid #8c8b8b;
   border-bottom: 0.5px solid #8c8b8b;
 }
 
+.product-sec__row-table table tbody td:first-child,
 .product-sec__table-tbody-td:first-child {
   border-left: 0.5px solid #8c8b8b;
 }

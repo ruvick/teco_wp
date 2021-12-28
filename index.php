@@ -43,11 +43,27 @@
 	<div class="_container">
 		<h2 class="products-sec__title">Продукция</h2>
 		<div class="products-sec__row">
+			<?
+				$categories = get_categories( [ 
+					'child_of'     => 3,
+					'orderby'      => 'meta_value_num',
+					'meta_key'		=> '_term_index',
+					'order'        => 'ASC',
+					'hide_empty'   => 0,
+				]);
 
-			<div class="products-sec__column">
+				foreach( $categories as $cat ){
+					get_template_part('template-parts/main', 'catalog-element', ["cat" => $cat]);
+				}
+			?>
+
+			<!-- <div class="products-sec__column">
 				<div class="products-sec__card">
 					<div class="products-sec__card-img">
-						<picture><source srcset="<?php echo get_template_directory_uri();?>/img/products/01.webp" type="image/webp"><img src="<?php echo get_template_directory_uri();?>/img/products/01.jpg?_v=1639983180738" alt=""></picture>
+						<picture>
+							<source srcset="<?php echo get_template_directory_uri();?>/img/products/01.webp" type="image/webp">
+							<img src="<?php echo get_template_directory_uri();?>/img/products/01.jpg?_v=1639983180738" alt="">
+						</picture>
 					</div>
 					<div class="products-sec__card-descp">
 						<h4 class="products-sec__card-descp-title">
@@ -237,7 +253,7 @@
 						<a href="#callback" class="products-sec__card-btn-link _popup-link btn">Заказать звонок</a>
 					</div>
 				</div>
-			</div>
+			</div> -->
 
 		</div>
 	</div>
@@ -379,60 +395,8 @@
 	</div>
 </section>
 
-<section id="consult" class="consult">
-<div class="_container">
-<h2 class="consult__title title">
-Остались вопросы по нашим товарам или нужна помощь <br>
-в подборе оборудования?
-</h2>
-<p class="consult__subtitle ">Оставьте заявку и наши менеджеры свяжутся с Вами в ближайшее время.</p>
-<form action="#" class="consult__form">
-<div class="consult__form-line form__line">
-	<input id="name" autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value="Имя"
-		class="consult__form-input input">
-
-	<input id="tel2" autocomplete="off" type="text" name="form[]" data-error="Заполните поле" data-value="Телефон"
-		class="consult__form-input input _phone _req">
-
-	<button type="submit" class="consult__form-btn btn">Заявка на расчет стоимости</button>
-
-</div>
-</form>
-</div>
-</section>
-
-<section id="team" class="team">
-<div class="_container">
-<h2 class="team__title">Наша команда</h2>
-<div class="team__row">
-<? $team = carbon_get_theme_option('complex_team');
-	if ($team) {
-		$teamIndex = 0;
-		foreach ($team as $item) {
-			?>
-			<div class="team__column">
-				<div class="team__card">
-					<div class="team__card-img">
-						<img src="<?php echo wp_get_attachment_image_src($item['img_team'], 'large')[0]; ?>" alt="">					</div>
-					<div class="team__card-descp">
-						<h4 class="team__card-title"><? echo $item['name_team']; ?></h4>
-						<p class="team__card-position"><? echo $item['special_team']; ?></p>
-					</div>
-					<div class="team__card-nav">
-						<a href="<? echo preg_replace('/[^0-9]/', '', $item['phone_team']); ?>" class="team__card-nav-phone"><? echo $item['phone_team']; ?></a>
-						<a href="mailto:<? echo $item['e-mail_team']; ?>" class="team__card-nav-email"><? echo $item['e-mail_team']; ?></a>
-					</div>
-				</div>
-			</div>
-			<?
-			$teamIndex++; 
-			if ($teamIndex == 4) break;
-		}
-	}
-	?>
-</div>
-</div>
-</section>
+	<?get_template_part('template-parts/question', 'section');?>
+	<?get_template_part('template-parts/command', 'section');?>
 
 </main>
 

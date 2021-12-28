@@ -11,6 +11,29 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field; 
 
+//Поля рубрик
+Container::make('term_meta', 'as_term_catalog', 'Дополнительные поля рубрики')
+->where( 'term_taxonomy', '=', 'category' )
+  ->add_fields(array(
+    Field::make('image', 'term_photo', 'Фото категории'),
+    Field::make('image', 'term_photo_webp', 'Фото категории WEBP'),
+    Field::make('text', 'term_index', 'Индекс сортировки')
+  ) );
+
+ Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
+  ->show_on_template(array('single-belt.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
+        ->add_fields( array(
+          Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
+          Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
+          Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
+          Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
+      ) ),
+    
+
+  ));
+
 Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     ->add_tab('Главная', array(
       // Field::make( 'image', 'as_logo', 'Логотип в шапке')
