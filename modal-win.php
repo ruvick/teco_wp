@@ -11,20 +11,18 @@
 						<source srcset="<?php echo get_template_directory_uri(); ?>/img/popup.webp" type="image/webp"><img src="<?php echo get_template_directory_uri(); ?>/img/popup.jpg?_v=1632757662937" alt="">
 					</picture>
 				</div>
-				<div class="popup__form-block"> 
-					<h2>Заказать звонок</h2> 
-					
+				<div class="popup__form-block universal_form">
+					<h2>Заказать звонок</h2>
+					<div class="SendetMsg" style="display:none;">
+						Ваше сообщение успешно отправлено.
+					</div>
 					<div class="headen_form_blk">
 						<p class="popup__notific">Оставьте заявку и мы свяжемся с Вами в течении 15 минут</p>
 						<form action="#" class="form universal_send_form">
-							
-							<div class="SendetMsg form_msg" style="display:none;">
-								Ваше сообщение успешно отправлено.
-							</div>
 
 							<div class="form__line">
-								<input id="name" autocomplete="off" type="text" name="name" data-error="Ошибка" data-value="Имя" class="popup__form-input input _req">
-								<input id="tel2" autocomplete="off" type="text" name="tel" data-error="Ошибка" data-value="Телефон" class="popup__form-input input _phone _req">
+								<input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля" data-value="Имя*" class="popup__form-input input _req _name">
+								<input id="tel2" autocomplete="off" type="text" name="tel" data-error="Заполните поля" data-value="Телефон*" class="popup__form-input input _phone _req _tel">
 							</div>
 							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
 									конфиденциальности</a></p>
@@ -39,7 +37,7 @@
 <!-- <a href="#callback" class="header__popup-link _popup-link">ЗАКАЗАТЬ ЗВОНОК</a> -->
 <!-- Popup-JS End -->
 
-<div style="display: none;">
+<!-- <div style="display: none;">
 	<div class="box-modal" id="messgeModal">
 		<div class="box-modal_close arcticmodal-close"><? _e("закрыть", "rubex"); ?></div>
 
@@ -73,4 +71,4 @@
 
 		</div>
 	</div>
-</div>
+</div> -->

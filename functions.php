@@ -1,7 +1,7 @@
 <?php
 
-define("COMPANY_NAME", "АВТОМОБИЛЬНЫЕ СИДЕНЬЯ");
-define("MAIL_RESEND", "noreply@ultrakresla.ru");
+define("COMPANY_NAME", "ТЕКО");
+define("MAIL_RESEND", "teko.post@gmail.com");
 
 //----Подключене carbon fields
 //----Инструкции по подключению полей см. в комментариях themes-fields.php
