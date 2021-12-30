@@ -1,8 +1,8 @@
 <?php
 
 /*
-Template Name: Страница - Клиновые ремни
-WP Post Template: Страница - Клиновые ремни
+Template Name: Страница - Приводные ремни
+WP Post Template: Страница - Приводные ремни
 Template Post Type: post
 */
 
@@ -32,66 +32,47 @@ get_header(); ?>
     <section id="product-sec-charect" class="product-sec-charect recurring">
         <div class="_container">
 
-          <h6 class="product-sec-charect__title"><?echo carbon_get_post_meta(get_the_ID(),"title_descript"); ?></h6>
-          <p class="product-sec-charect__subtitle">
-            <?echo carbon_get_post_meta(get_the_ID(),"text_descript"); ?>
-          </p>
+		<? $strap = carbon_get_post_meta($post->ID, 'strap_item');
+                    if ($strap) {
+                        $strapIndex = 0;
+                        foreach ($strap as $item) {
+        ?>
+        
+		<h2 class = "sub_position_head"><?echo $item['strap_title']?></h2>
 
+		  <p class="product-sec-charect__subtitle">
+		  	<?echo $item['strap_title_descript']?>
+          </p>
+		
           <div class="product-sec-charect__wrap">
 
             <div class="product-sec-charect__wrap-img-block">
               <div class="product-sec-charect__wrap-img-block-image">
-                <picture><img src="<?php echo wp_get_attachment_image_src( carbon_get_the_post_meta('belt_item_char_img_1'), 'full')[0]; ?>" alt=""></picture>
+                <picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_1'], 'full')[0]; ?>" alt=""></picture>
               </div>
               <div class="product-sec-charect__wrap-img-block-image">
-                <picture><img src="<?php echo wp_get_attachment_image_src( carbon_get_the_post_meta('belt_item_char_img_2'), 'full')[0]; ?>" alt=""></picture>              
+                <picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_2'], 'full')[0]; ?>" alt=""></picture>              
               </div>
             </div>
 
             <div class="product-sec-charect__wrap-table">
-              <?echo carbon_get_post_meta(get_the_ID(),"belt_item_table_char"); ?>
+				<?echo apply_filters('the_content', $item['strap_item_table_char'])?>
             </div>
 
           </div>
 
-          <?echo carbon_get_post_meta(get_the_ID(),"belt_charect"); ?>
+          <?//echo apply_filters('the_content', $item['strap_charect'])?>
 
-        </div>
+        
+		<?
+				$strapIndex++;
+			}
+		}
+		?>
+		</div>
       </section>
 
-      <section id="similar-products" class="similar-products">
-        <div class="_container">
-          <h2 class="similar-products__title">Похожие товары</h2>
-
-          <div class="similar-products__row product">
-          <?php 
-			      $posts = get_posts( array(
-				      'numberposts' => 5,
-				      'category'    => 6,
-				      'orderby'     => 'date',
-				      // 'orderby'     => '612,616,626',
-				      'order'       => 'ASC',
-				      // 'include'     => '612,608,606',
-				      'include'     => array(),
-				      'exclude'     => array(),
-				      'meta_key'    => '',
-				      'meta_value'  =>'',
-				      'post_type'   => 'post',
-				      'suppress_filters' => true, // подавление работы фильтров изменения SQL запроса
-			      ) );
-
-			      $result = wp_get_recent_posts( $args );
-
-			      foreach( $posts as $post ){
-		      ?>
-			      <?php get_template_part('template-parts/similar-element');?>	
-		      <?php 
-			        } 
-		      ?>
-          </div>
-
-        </div>
-      </section>
+	<?get_template_part('template-parts/up', 'sale');?>
     
     <?get_template_part('template-parts/question', 'section');?>
 	<?get_template_part('template-parts/command', 'section');?>

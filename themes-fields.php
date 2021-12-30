@@ -34,25 +34,41 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
 
   ));
 
-  Container::make('post_meta', 'belt_param', 'Клиновые ремни')
+  Container::make('post_meta', 'strap_param', 'Параметры приводных ремней')
   ->show_on_template(array('single-belt-charect.php'))
       ->add_fields(array(   
-        Field::make('text', 'title_descript', 'Заголовок описания')->set_width(50), 
-        Field::make('text', 'text_descript', 'Текст описание')->set_width(50), 
-        Field::make('image', 'belt_item_char_img_1', 'Изображение 1' )->set_width(50),
-        Field::make('image', 'belt_item_char_img_2', 'Изображение 2' )->set_width(50),
-        Field::make('rich_text', 'belt_item_table_char', 'Таблица характеристик')->set_width(100),
-        Field::make('rich_text', 'belt_charect', 'Харрактеристики')->set_width(50), 
-      // Field::make( 'complex', 'belt_item', "Клиновые ремни раздела" )
-      //   ->add_fields( array(
-      //     Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
-      //     Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
-      //     Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
-      //     Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
-      // ) ),
+      Field::make( 'complex', 'strap_item', "Приводные ремни" )
+        ->add_fields( array(
+        Field::make('text', 'strap_title', 'Заголовок')->set_width(100), 
+        Field::make('rich_text', 'strap_title_descript', 'Текст над таблицей')->set_width(100), 
+        Field::make('image', 'strap_item_char_img_1', 'Изображение 1' )->set_width(50),
+        Field::make('image', 'strap_item_char_img_2', 'Изображение 2' )->set_width(50),
+        Field::make('rich_text', 'strap_item_table_char', 'Таблица характеристик')->set_width(100),
+        Field::make('rich_text', 'strap_charect', 'Харрактеристики (Описание)')->set_width(50),  
+      ) ),
     
 
   ));
+
+  // Container::make('post_meta', 'belt_param', 'Клиновые ремни')
+  // ->show_on_template(array('single-belt-charect.php'))
+  //     ->add_fields(array(   
+  //       Field::make('text', 'title_descript', 'Заголовок описания')->set_width(100), 
+  //       Field::make('text', 'text_descript', 'Текст описание')->set_width(100), 
+  //       Field::make('image', 'belt_item_char_img_1', 'Изображение 1' )->set_width(50),
+  //       Field::make('image', 'belt_item_char_img_2', 'Изображение 2' )->set_width(50),
+  //       Field::make('rich_text', 'belt_item_table_char', 'Таблица характеристик')->set_width(100),
+  //       Field::make('rich_text', 'belt_charect', 'Харрактеристики')->set_width(50), 
+  //     // Field::make( 'complex', 'belt_item', "Клиновые ремни раздела" )
+  //     //   ->add_fields( array(
+  //     //     Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
+  //     //     Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
+  //     //     Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
+  //     //     Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
+  //     // ) ),
+    
+
+  // ));
 
 Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
     ->add_tab('Главная', array(

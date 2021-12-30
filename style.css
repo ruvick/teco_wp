@@ -914,6 +914,10 @@ ol.counter li:before {
      text-overflow: ellipsis;
 }
 
+table {
+  border-spacing: 0;
+}
+
 .table {
   display: table;
   font-size: 0;
@@ -4115,6 +4119,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .product__card-img {
   height: 177px;
   overflow: hidden;
+  border: 1px solid #E8E8E8;
 }
 
 .product__card-descp {
@@ -4181,7 +4186,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
-  padding: 21px 15px 0 64px;
+  padding: 21px 35px 0 35px;
   margin-bottom: 32px;
 }
 
@@ -4189,9 +4194,13 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 16px;
 }
 
+.products-sec__card-descp-list {
+  margin-bottom: 0!important;
+}
+
 .products-sec__card-descp-list-item {
   font-size: 14px;
-  margin-bottom: 5px;
+  margin-bottom: 5px!important;
 }
 
 .products-sec__card-descp-list-item:last-child {
@@ -4199,7 +4208,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .products-sec__card-btn {
-  padding: 0 15px 0 64px;
+  padding: 0 35px 0 35px;
 }
 
 ._no-webp .service{
@@ -4572,6 +4581,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 30px;
 }
 
+.product-sec-charect__wrap-table table{
+  margin-bottom: 0;
+}
+
 .product-sec-charect__wrap-table table thead,
 .product-sec__row-table table thead,
 .product-sec__table-thead {
@@ -4644,7 +4657,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-flex: 0;
       -ms-flex: 0 1 383px;
           flex: 0 1 383px;
-  height: 272px;
+  
   background: #E8E8E8;
   border: 0.43px solid #8c8b8b;
   overflow: hidden;
