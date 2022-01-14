@@ -40,26 +40,32 @@ get_header(); ?>
         
 		<h2 class = "sub_position_head"><?echo $item['strap_title']?></h2>
 
-		  <p class="product-sec-charect__subtitle">
-		  	<?echo $item['strap_title_descript']?>
-          </p>
-		
-          <div class="product-sec-charect__wrap">
-
-            <div class="product-sec-charect__wrap-img-block">
-              <div class="product-sec-charect__wrap-img-block-image">
-                <picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_1'], 'full')[0]; ?>" alt=""></picture>
-              </div>
-              <div class="product-sec-charect__wrap-img-block-image">
-                <picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_2'], 'full')[0]; ?>" alt=""></picture>              
-              </div>
-            </div>
-
-            <div class="product-sec-charect__wrap-table">
-				<?echo apply_filters('the_content', $item['strap_item_table_char'])?>
-            </div>
-
+		  <div class="product-sec-charect__subtitle">
+		  	<?echo apply_filters('the_content', $item['strap_title_descript']);?>
           </div>
+		
+		  <? if (!empty($item['strap_item_table_char'])) {?> 
+			<div class="product-sec-charect__wrap">
+
+			<? if (!empty($item['strap_item_char_img_1'])) {?> 
+				<div class="product-sec-charect__wrap-img-block">
+				<div class="product-sec-charect__wrap-img-block-image">
+					<picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_1'], 'full')[0]; ?>" alt=""></picture>
+				</div>
+				<? if (!empty($item['strap_item_char_img_2'])) {?> 
+					<div class="product-sec-charect__wrap-img-block-image">
+						<picture><img src="<?php echo wp_get_attachment_image_src( $item['strap_item_char_img_2'], 'full')[0]; ?>" alt=""></picture>              
+					</div>
+				<?}?>
+				</div>
+			<?}?>
+
+				<div class="product-sec-charect__wrap-table">
+					<?echo apply_filters('the_content', $item['strap_item_table_char'])?>
+				</div>
+
+			</div>
+		  <?}?>
 
           <?//echo apply_filters('the_content', $item['strap_charect'])?>
 

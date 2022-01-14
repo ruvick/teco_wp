@@ -42,6 +42,9 @@ get_header(); ?>
 
 			</div>
 		</section>
+		
+		<?get_template_part('template-parts/command', 'section');?>
+
 	</main>
 
 <?php get_footer();

@@ -21,7 +21,7 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
   ) );
 
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
-  ->show_on_template(array('single-belt.php'))
+  ->show_on_template(array('single-belt.php', 'single-belt-modul.php', 'single-prutkovie.php'))
       ->add_fields(array(   
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
