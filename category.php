@@ -74,7 +74,7 @@
 								
 							<?}?>
 
-							<? $catMat = carbon_get_the_post_meta('cat_mat_complex');
+							<? $catMat = carbon_get_term_meta( get_queried_object_id(),  'cat_mat_complex');
 									if ($catMat) {
 								$catMatIndex = 0;
 									foreach ($catMat as $item) {
@@ -82,16 +82,18 @@
 									<div class="product__column catalog-product__column">
 										<div class="product__card">
 											<div class="product__card-img">
-													<a href = "<? echo get_the_permalink($pst->ID)?>">
+													<picture>
 														<img src="<?php echo wp_get_attachment_image_src($item['cat_mat_img'], 'large')[0]; ?>" alt="">
-													</a>
+													</picture>
 											</div>
 											<div class="product__card-descp">
 													<h6 class="product__card-descp-title">
 														<? echo $item['cat_mat_title']; ?>
 													</h6>
 											</div>
-											<a href = "<? echo $item['cat_mat_file']; ?>" class="product__card-btn btn">Скачать</a>
+											<?php
+                				printf('<a href="%s" download class="product__card-btn btn">Скачать</a>', $item['cat_mat_file']);
+                			?>
 										</div>
 									</div>
 							<?

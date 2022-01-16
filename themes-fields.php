@@ -22,7 +22,8 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
       ->add_fields( array(
       Field::make('image', 'cat_mat_img', 'Изображение' )->set_width(15),
       Field::make('text', 'cat_mat_title', 'Название')->set_width(50),
-      Field::make('text', 'cat_mat_file', 'Файл')->set_width(50)      
+      Field::make('file', 'cat_mat_file', 'Файл')->set_width(50)    
+      ->set_value_type('url'),  
   ) ),
   ) );
 
