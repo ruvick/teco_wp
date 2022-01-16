@@ -31,7 +31,7 @@
 						'numberposts' => -1,
 						'category' => $current_cat_id,
 						'orderby' => 'date',
-						'order' => 'DESC',
+						'order' => 'ASC',
 					]);
 				?>
 
