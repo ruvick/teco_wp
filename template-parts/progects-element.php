@@ -1,4 +1,4 @@
-<div class="completed-projects__column">
+<a href="<?php echo get_permalink();?>" class="completed-projects__column">
   <div class="completed-projects__card">
     <div class="completed-projects__card-img">
       <picture>
@@ -8,7 +8,7 @@
     </div>
     <div class="completed-projects__card-descp completed-projects__card-descp_red">
       <h5 class="completed-projects__card-descp-title"><?php echo $post->post_title?></h5>
-      <a href="<?php echo get_permalink();?>" class="completed-projects__card-descp-link">Подробнее...</a>
+      <span class="completed-projects__card-descp-link">Подробнее...</span>
     </div>
   </div>
-</div>
+</a>
