@@ -17,7 +17,13 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
   ->add_fields(array(
     Field::make('image', 'term_photo', 'Фото категории'),
     Field::make('image', 'term_photo_webp', 'Фото категории WEBP'),
-    Field::make('text', 'term_index', 'Индекс сортировки')
+    Field::make('text', 'term_index', 'Индекс сортировки'),
+    Field::make( 'complex', 'cat_mat_complex', "Материалы для категории" )
+      ->add_fields( array(
+      Field::make('image', 'cat_mat_img', 'Изображение' )->set_width(15),
+      Field::make('text', 'cat_mat_title', 'Название')->set_width(50),
+      Field::make('text', 'cat_mat_file', 'Файл')->set_width(50)      
+  ) ),
   ) );
 
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
