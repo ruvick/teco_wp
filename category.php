@@ -58,10 +58,10 @@
 									<div class="product__column catalog-product__column">
 										<div class="product__card">
 											<div class="product__card-img">
-													<picture>
+													<a href = "<? echo get_the_permalink($pst->ID)?>">
 														<?php echo get_the_post_thumbnail( $pst->ID, "large" ); ?>
 														<!-- <img src="img/product/01.jpg?_v=1639983180738" alt=""> -->
-													</picture>
+													</a>
 											</div>
 											<div class="product__card-descp">
 													<h6 class="product__card-descp-title">

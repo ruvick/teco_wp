@@ -1,7 +1,7 @@
 <div class="products-sec__column">
 	<div class="products-sec__card">
-		<div class="products-sec__card-img">
-			<picture>
+		<div class="products-sec__card-img"> 
+			<a href="<?echo get_category_link($args['cat']->term_id)?>">
 				<? 
           $webp = carbon_get_term_meta($args['cat']->term_id, 'term_photo_webp');
 
@@ -11,7 +11,7 @@
         <?}?>
 
         <img src="<?php echo wp_get_attachment_image_src(carbon_get_term_meta($args['cat']->term_id, 'term_photo'), 'full')[0];?>" alt="">
-			</picture>
+			</a>
 		</div>
 		<div class="products-sec__card-descp">
 			<h4 class="products-sec__card-descp-title">
