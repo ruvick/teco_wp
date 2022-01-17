@@ -4763,16 +4763,40 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 /* Оформление дефолтных стилей */
-.content ul {
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  margin-top: 15px;
   margin-bottom: 35px;
 }
 
+.content p {
+  margin: 15px 0;
+}
+
+.content ul,
+.content ol {
+  margin-bottom: 35px;
+}
+
+.content ol li,
 .content ul li {
   margin-bottom: 15px;
 }
 
+.content ol li:last-child,
 .content ul li:last-child {
   margin-bottom: 0;
+}
+
+.cat-content-img {
+  width: 100%;
+  height: 430px;
+  margin-bottom: 35px;
+  overflow: hidden;
 }
 /* =========================== */
 
@@ -5134,6 +5158,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
         -ms-flex: 0 1 25%;
             flex: 0 1 25%;
   }
+  .cat-content-img {
+    height: 330px;}
 }
 
 @media (max-width: 991.98px) {
@@ -5728,6 +5754,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   h2 {
     margin-bottom: 15px !important;
   }
+  .cat-content-img {
+    height: 250px;}
 }
 
 @media (max-width: 730px) {
@@ -5920,6 +5948,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .product-sec__table {
     width: 950px;
   }
+  .cat-content-img {
+    height: 150px;}
 }
 
 @media (max-width: 460px) {
