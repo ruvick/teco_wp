@@ -15,6 +15,7 @@ use Carbon_Fields\Field;
 Container::make('term_meta', 'as_term_catalog', 'Дополнительные поля рубрики')
 ->where( 'term_taxonomy', '=', 'category' )
   ->add_fields(array(
+    Field::make('image', 'term_bnr_photo', 'Баннер для простой категории'),
     Field::make('image', 'term_photo', 'Фото категории'),
     Field::make('image', 'term_photo_webp', 'Фото категории WEBP'),
     Field::make('text', 'term_index', 'Индекс сортировки'),

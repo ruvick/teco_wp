@@ -21,7 +21,7 @@
 		<section class="content"> 
 			<div class="_container">
 				<?php 
-					$thumbnail_id = carbon_get_term_meta( get_queried_object_id(),  'term_photo'); // получим ID картинки из опции темы
+					$thumbnail_id = carbon_get_term_meta( get_queried_object_id(),  'term_bnr_photo'); // получим ID картинки из опции темы
 					$thumbnail_url = wp_get_attachment_image_url( $thumbnail_id, 'full' );  // ссылка на полный размер картинки по ID вложения
 				?>
 				<div class="cat-content-img">
