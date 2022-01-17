@@ -4777,6 +4777,10 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin: 15px 0;
 }
 
+.content img {
+  margin: 15px 0;
+}
+
 .content ul,
 .content ol {
   margin-bottom: 35px;
