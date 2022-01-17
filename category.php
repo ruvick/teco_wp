@@ -82,9 +82,11 @@
 									<div class="product__column catalog-product__column">
 										<div class="product__card">
 											<div class="product__card-img">
+												<a href = "<? echo $item['cat_mat_file']?>">
 													<picture>
 														<img src="<?php echo wp_get_attachment_image_src($item['cat_mat_img'], 'large')[0]; ?>" alt="">
 													</picture>
+												</a>
 											</div>
 											<div class="product__card-descp">
 													<h6 class="product__card-descp-title">
