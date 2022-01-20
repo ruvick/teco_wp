@@ -1,8 +1,8 @@
 <?php
 
 /*
-Template Name: Страница - прутковые транспортеры
-WP Post Template: Страница - прутковые транспортеры
+Template Name: Страница - Шланги и воздуховоды ПВХ
+WP Post Template: Страница - Шланги и воздуховоды ПВХ
 Template Post Type: post
 */
 

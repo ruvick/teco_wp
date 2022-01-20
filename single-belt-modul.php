@@ -63,6 +63,8 @@ get_header(); ?>
             </div>
       </section>
     
+    <?get_template_part('template-parts/up', 'sale');?>
+
     <?get_template_part('template-parts/question', 'section');?>
 	<?get_template_part('template-parts/command', 'section');?>
 
