@@ -33,10 +33,23 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
       ->add_fields(array(   
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
-          Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
+          Field::make('c', 'belt_item_title', 'Заголовок')->set_width(100),
           Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
           Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
           Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
+      ) ),
+    
+
+  ));
+
+  Container::make('post_meta', 'vozduhividu_param', 'Шланги и воздуховоды ПВХ')
+  ->show_on_template(array('single-vozduhividu.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'vozduh_complex', "Карточка" )
+        ->add_fields( array(
+          Field::make('image', 'vozduh_complex_img', 'Изображение' )->set_width(50),
+          Field::make('text', 'vozduh_complex_title', 'Заголовок')->set_width(50),
+          Field::make('text', 'vozduh_complex_descp', 'Описание')->set_width(50),     
       ) ),
     
 
