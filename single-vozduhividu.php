@@ -46,7 +46,10 @@ get_header(); ?>
 							</div>
 							<div class="pr-card__descp">
 								<h4 class="pr-card__descp-title"><? echo $item['vozduh_complex_title']; ?></h4>
-								<p class="pr-card__descp-text"><? echo $item['vozduh_complex_descp']; ?></p>
+								<p class="pr-card__descp-text"><strong>Рабочая температура: </strong><? echo $item['vozduh_complex_temp']; ?></p>
+								<p class="pr-card__descp-text"><strong>Диаметр: </strong><? echo $item['vozduh_complex_diam']; ?></p>
+								<p class="pr-card__descp-text"><strong>Рабочее давление: </strong><? echo $item['vozduh_complex_davlenie']; ?></p>
+								<p class="pr-card__descp-text"><strong>Вакуум: </strong><? echo $item['vozduh_complex_vak']; ?></p>
 							</div>
 						</a>
 					<?

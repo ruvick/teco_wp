@@ -49,7 +49,10 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
         ->add_fields( array(
           Field::make('image', 'vozduh_complex_img', 'Изображение' )->set_width(50),
           Field::make('text', 'vozduh_complex_title', 'Заголовок')->set_width(50),
-          Field::make('text', 'vozduh_complex_descp', 'Описание')->set_width(50),     
+          Field::make('text', 'vozduh_complex_temp', 'Рабочая температура')->set_width(100),     
+          Field::make('text', 'vozduh_complex_diam', 'Диаметр')->set_width(100),     
+          Field::make('text', 'vozduh_complex_davlenie', 'Давление')->set_width(100),     
+          Field::make('text', 'vozduh_complex_vak', 'Вакуум')->set_width(100),     
       ) ),
     
 
