@@ -5016,11 +5016,16 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   overflow: hidden;
 }
 .pr-card__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex: 0 0 180px;
   height: 180px;
   margin-right: 20px;
-  border-radius: 50%;
   overflow: hidden;
+}
+.pr-card__img img {
+  height: auto;
 }
 .pr-card__descp {
 }
@@ -5939,12 +5944,15 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     padding: 15px;
   }
   .pr-card__img {
+    flex: 0 1 100%;
     margin-right: 0;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
   .pr-card__descp-title {
     font-size: 20px;
   }
+  .pr-card__descp {
+    flex: 0 1 100%;}
   .pr-card__descp-text {
     font-size: 14px;
   }
