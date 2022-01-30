@@ -28,8 +28,21 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
   ) ),
   ) );
 
+  Container::make('post_meta', 'single-prutkovie', 'Прутковые транспортеры')
+  ->show_on_template(array('single-prutkovie.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'prut_complex', "Карточка" )
+        ->add_fields( array(
+          Field::make('image', 'prut_complex_img', 'Изображение' )->set_width(50),
+          Field::make('text', 'prut_complex_title', 'Наименование')->set_width(50),
+          Field::make('text', 'prut_complex_descp', 'Описание')->set_width(100),       
+      ) ),
+    
+
+  ));
+
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
-  ->show_on_template(array('single-belt.php', 'single-belt-modul.php', 'single-prutkovie.php'))
+  ->show_on_template(array('single-belt.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php'))
       ->add_fields(array(   
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
@@ -57,6 +70,7 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
     
 
   ));
+
 
   Container::make('post_meta', 'strap_param', 'Параметры приводных ремней')
   ->show_on_template(array('single-belt-charect.php'))

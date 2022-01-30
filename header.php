@@ -14,6 +14,7 @@
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/icon16.png" sizes="16x16">
   <link rel="icon" type="image/png" href="<?php echo get_template_directory_uri();?>/img/favicons/fav.svg" sizes="any">
   <meta name="mailru-domain" content="WFVTYJlbc9ijiOhZ" />
+  <meta name="yandex-verification" content="6fad6c999a7b38c6" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 
   <?php wp_head();?>   

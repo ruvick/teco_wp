@@ -5025,7 +5025,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   overflow: hidden;
 }
 .pr-card__img img {
-  height: auto;
+  /* height: auto; */
+  object-fit: contain;
 }
 .pr-card__descp {
   flex: 1 1 auto;
