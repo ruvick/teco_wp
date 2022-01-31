@@ -4120,6 +4120,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   height: 177px;
   overflow: hidden;
   border: 1px solid #E8E8E8;
+  background-color: white;
 }
 
 .product__card-descp {
