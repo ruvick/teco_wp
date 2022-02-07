@@ -55,6 +55,20 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
 
   ));
 
+  Container::make('post_meta', 'belt_param', 'Конвейеры')
+  ->show_on_template(array('single-conveyer.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'belt_item', "Подвиды конвейеров" )
+        ->add_fields( array(
+          Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
+          Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
+          Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
+          Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
+      ) ),
+    
+
+  ));
+
   Container::make('post_meta', 'vozduhividu_param', 'Шланги и воздуховоды ПВХ')
   ->show_on_template(array('single-vozduhividu.php'))
       ->add_fields(array(   

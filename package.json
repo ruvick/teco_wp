@@ -13,6 +13,7 @@
     "send_singl": "scp -C single.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_one": "scp -C single-prutkovie.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_one1": "scp -C single-prutkovie-komplekt.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
+    "send_one2": "scp -C single-conveyer.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_index": "scp -C index.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_func": "scp -C functions.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_futt": "scp -C footer.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
