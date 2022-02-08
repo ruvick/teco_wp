@@ -5057,6 +5057,23 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 15px;
 }
 
+.about {
+  padding: 65px 0 25px 0;
+}
+.about__title {
+  margin-bottom: 25px;
+}
+.about__descp {
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
 
 
 
