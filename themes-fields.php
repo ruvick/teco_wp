@@ -102,6 +102,20 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
 
   ));
 
+  Container::make('post_meta', 'vacancies', 'Вакансии')
+  ->show_on_template(array('page-vacancies.php'))
+      ->add_fields(array(   
+      Field::make( 'complex', 'vacancies_complex', "Вакансии" )
+        ->add_fields( array(
+          Field::make('text', 'vacancies_name', 'Наименование вакансии')->set_width(100),
+          Field::make('rich_text', 'vacancies_duties', 'Обязанности')->set_width(50),    
+          Field::make('rich_text', 'vacancies_requirements', 'Требования')->set_width(50),     
+          Field::make('rich_text', 'vacancies_salary', 'Заработная плата')->set_width(50), 
+      ) ),
+    
+
+  ));
+
   // Container::make('post_meta', 'belt_param', 'Клиновые ремни')
   // ->show_on_template(array('single-belt-charect.php'))
   //     ->add_fields(array(   
