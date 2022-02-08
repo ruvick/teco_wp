@@ -5067,8 +5067,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 15px;
 }
 
-
-
+.team__row {
+  filter: blur(9px);
+}
+.team__descp {
+  margin-bottom: 15px;
+}
+.team__descp-link {
+}
 
 
 

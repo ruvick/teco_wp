@@ -28,5 +28,7 @@
             }
             ?>
         </div>
+				<h4 class="team__descp">Скоро здесь появятся фото нашей команды, а пока вы можете ознакомиться с открытыми вакансиями</h4>
+				<a href="<?php echo get_permalink(376);?>" class="team__descp-link btn">Посмотреть вакансии</a>
     </div>
 </section>
