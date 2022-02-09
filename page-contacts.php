@@ -37,6 +37,7 @@ get_header(); ?>
 		<? $bank = carbon_get_theme_option("as_bank"); if (!empty($bank)){?><li>БАНК: <strong><? echo $bank; ?></strong></li><?}?>
 		<? $mail = carbon_get_theme_option("as_email"); if (!empty($mail)){?><li>Email: <strong><a href="mailto:<? echo $mail; ?>"><? echo $mail; ?></strong></a></li><?}?>
 		<? $tel = carbon_get_theme_option("as_phones_1"); $tel2 = carbon_get_theme_option("as_phone_2"); if (!empty($tel)){?><li>Тел: <strong><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel; ?></strong></a> <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></strong></a></li><?}?> 
+		<? $mpPartner = carbon_get_theme_option("mp_partner"); if (!empty($mpPartner)){?><li><strong><a class="mp-partner" href="<? echo $mpPartner; ?>" download >Карта партнера</a></strong></li><?}?> 
 	</ul>
 
 		<div class="block__map" id="map"></div>

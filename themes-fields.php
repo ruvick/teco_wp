@@ -215,6 +215,9 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           ->set_width(50),
         Field::make('text', 'text_map', 'Текст метки карты')
           ->set_width(50),
+        Field::make("file", "mp_partner", "Карта партнера")
+          ->set_value_type('url') // сохранить в метаполе ссылку на файл
+          ->set_width(50),
     ) );
     Container::make('post_meta', 'ultra_product_cr', 'Характеристики товара')
     ->show_on_post_type(array( 'ultra'))
