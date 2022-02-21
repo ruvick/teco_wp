@@ -93,6 +93,13 @@
 
 							<?
 								foreach( $my_posts as $pst ){
+									// echo "<pre>";
+									// print_r(get_the_category( $pst->ID ));
+									// echo "</pre>";
+
+									// $p_cats = get_the_category( $pst->ID );
+
+									// if ($p_cats[count($p_cats)-1]->name !== get_cat_name( get_queried_object_id())) continue;
 							?>
 								
 									<div class="product__column catalog-product__column">
