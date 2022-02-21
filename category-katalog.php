@@ -23,7 +23,7 @@
         <div class="products-sec__row">
           <?
             $categories = get_categories( [ 
-              'child_of'     => 3,
+              'parent'     => 3,
               'orderby'      => 'meta_value_num',
               'meta_key'		=> '_term_index',
               'order'        => 'ASC',

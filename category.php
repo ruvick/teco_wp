@@ -38,6 +38,24 @@
             	<div class="catalog__sidebar">
 					<ul class="catalog__sidebar-menu-list">
 						<?
+							$cats = get_categories( [
+								'parent' => get_queried_object_id(),
+								'hide_empty'   => 0,
+								'orderby'      => 'meta_value_num',
+								'meta_key'		=> '_term_index',
+								'order'        => 'ASC',
+						   	] );
+							
+							foreach( $cats as $cat ) { 
+							?>
+								<li class="catalog__sidebar-menu-list-item">
+									<a href="<? echo get_category_link($cat->term_id)?>" class="catalog__sidebar-menu-list-item-link _active"><? echo $cat->name?></a>
+								</li>
+							<?
+							}
+							?>
+						
+						<?
 							foreach( $my_posts as $pst ){
 						?>
 							<li class="catalog__sidebar-menu-list-item">
@@ -52,6 +70,28 @@
 					<div class="catalog-product__container">
 						<div class="catalog-product__row">
 							<?
+							foreach( $cats as $cat ) { 
+							?>
+									<div class="product__column catalog-product__column">
+										<div class="product__card">
+											<div class="product__card-img">
+													<a href = "<? echo get_category_link($cat->term_id)?>">
+														<img src="<?php echo wp_get_attachment_image_src(carbon_get_term_meta($cat->term_id, 'term_photo'), 'full')[0];?>" alt="">
+													</a>
+											</div>
+											<div class="product__card-descp">
+													<h6 class="product__card-descp-title">
+														<? echo $cat->name?>
+													</h6>
+											</div>
+											<a href = "<? echo get_category_link($cat->term_id)?>" class="product__card-btn btn">Подробнее</a>
+										</div>
+									</div>
+							<?
+							}
+							?>
+
+							<?
 								foreach( $my_posts as $pst ){
 							?>
 								
@@ -60,6 +100,7 @@
 											<div class="product__card-img">
 													<a href = "<? echo get_the_permalink($pst->ID)?>">
 														<?php echo get_the_post_thumbnail( $pst->ID, "large" ); ?>
+														
 														<!-- <img src="img/product/01.jpg?_v=1639983180738" alt=""> -->
 													</a>
 											</div>

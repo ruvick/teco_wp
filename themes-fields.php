@@ -41,8 +41,18 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
 
   ));
 
+  Container::make('post_meta', 'tsepi_param', 'Параметры цепи')
+  ->show_on_template(array('single-tsepi.php'))
+      ->add_fields(array(   
+        Field::make('image', 'tsepi_img', 'Изображение' )->set_width(30),
+        Field::make('text', 'tsepi_table_name', 'Имя таблицы' )->set_width(30),
+        Field::make('text', 'tsepi_table_id', 'Идентификатор в таблице' )->set_width(30),
+        Field::make('rich_text', 'tsepi_description', 'Дополнительное описание товара')->set_width(100)
+
+  ));
+
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
-  ->show_on_template(array('single-belt.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php', 'single-prutkovie.php'))
+  ->show_on_template(array( 'single-belt.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php', 'single-prutkovie.php'))
       ->add_fields(array(   
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
@@ -51,8 +61,6 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
           Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
           Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
       ) ),
-    
-
   ));
 
   Container::make('post_meta', 'belt_param', 'Конвейеры')
