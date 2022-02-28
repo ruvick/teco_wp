@@ -38,6 +38,8 @@
             	<div class="catalog__sidebar">
 					<ul class="catalog__sidebar-menu-list">
 						<?
+							
+							
 							$cats = get_categories( [
 								'parent' => get_queried_object_id(),
 								'hide_empty'   => 0,
@@ -47,6 +49,7 @@
 						   	] );
 							
 							foreach( $cats as $cat ) { 
+	
 							?>
 								<li class="catalog__sidebar-menu-list-item">
 									<a href="<? echo get_category_link($cat->term_id)?>" class="catalog__sidebar-menu-list-item-link _active"><? echo $cat->name?></a>
@@ -57,6 +60,10 @@
 						
 						<?
 							foreach( $my_posts as $pst ){
+								$cat = new WPSEO_Primary_Term('category', $pst->ID);
+								$cat_name = get_term($cat->get_primary_term())->name;
+
+								if ($cat_name !== get_cat_name( get_queried_object_id())) continue;
 						?>
 							<li class="catalog__sidebar-menu-list-item">
 								<a href="<? echo get_the_permalink($pst->ID)?>" class="catalog__sidebar-menu-list-item-link _active"><? echo $pst->post_title?></a>
@@ -93,13 +100,15 @@
 
 							<?
 								foreach( $my_posts as $pst ){
-									// echo "<pre>";
-									// print_r(get_the_category( $pst->ID ));
-									// echo "</pre>";
 
-									// $p_cats = get_the_category( $pst->ID );
+								
+								$cat = new WPSEO_Primary_Term('category', $pst->ID);
+								$cat_name = get_term($cat->get_primary_term())->name;
 
-									// if ($p_cats[count($p_cats)-1]->name !== get_cat_name( get_queried_object_id())) continue;
+								// echo "<pre>";
+								// print_r($p_cats);
+								// echo "</pre>";
+								if ($cat_name !== get_cat_name( get_queried_object_id())) continue;
 							?>
 								
 									<div class="product__column catalog-product__column">
