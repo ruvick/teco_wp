@@ -573,3 +573,4 @@ function send_cart()
 		wp_die('НО-НО-НО!', '', 403);
 	}
 }
+
