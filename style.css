@@ -4828,6 +4828,15 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .ymaps-2-1-78-map-copyrights-promo {
   display: none !important; }
 
+.list_style ul{
+  padding-left: 35px;
+}
+
+.list_style ul li{
+  padding-left: 10px;
+  list-style: square;
+}
+
 @media (max-width: 460px) {
   .block__map {
     height: 300px; }
@@ -5043,6 +5052,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .vacancies__block {
   margin-bottom: 35px;
 }
+
+.vacancies__block h3 {
+  font-size: 24px;
+}
+
 .vacancies__block:last-child {
   margin-bottom: 0;
 }

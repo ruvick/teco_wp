@@ -100,7 +100,7 @@
 					<span class="service__card-icon service__card-icon_02"></span>
 					<h4 class="service__card-title">
 						Стыковка конвейерных <br>
-						лент методом горячей <br>
+						лент методом холодной <br>
 						вулканизации
 					</h4>
 				</div>

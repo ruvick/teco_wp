@@ -32,7 +32,7 @@ get_header(); ?>
 		$vacanciesIndex = 0;
 		foreach ($vacancies as $item) {
 			?>
-      <div class="vacancies__block">
+      <div class="vacancies__block list_style">
         <h2><? echo $item['vacancies_name']; ?></h2>
         <div class="vacancies__block-item">
           <h3>Обязанности:</h3>
