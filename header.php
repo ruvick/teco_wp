@@ -32,3 +32,7 @@
   <div class="wrapper">  
     <!-- Подключение  модальных окон-->
     <? include "modal-win.php";?>
+
+    <div class = "siteInWork">
+        <span>САЙТ В РАЗРАБОТКЕ</span>
+    </div>

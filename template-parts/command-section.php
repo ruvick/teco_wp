@@ -1,4 +1,4 @@
-<section id="team" class="team">
+<!-- <section id="team" class="team">
     <div class="_container">
         <h2 class="team__title">Наша команда</h2>
         <div class="team__row">
@@ -31,4 +31,4 @@
 				<h4 class="team__descp">Скоро здесь появятся фото нашей команды, а пока вы можете ознакомиться с открытыми вакансиями</h4>
 				<a href="<?php echo get_permalink(376);?>" class="team__descp-link btn">Посмотреть вакансии</a>
     </div>
-</section>
+</section> -->
