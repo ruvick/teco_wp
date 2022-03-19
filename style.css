@@ -5110,24 +5110,31 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .siteInWork {
   position: fixed;
   bottom: 0;
-  left: 10px;
+  right: 10px;
   width: 200px;
   height: 80px;
-  background-color: #AE0018;
-  color: white;
+  background-color: white;
+  color: gray;
   font-size: 14px;
   text-align: center;
   padding: 10px;
+  border-top: 1px solid gray;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
 }
 
 
 .siteInWork span{
-  
+  font-weight: bold;
 }
 
 .siteInWork p{
-  
+  font-size: 12px;
 }
+
+.siteInWork p a{
+  color: gray;
+ }
 
 
 @media (min-width: 991.98px) {
