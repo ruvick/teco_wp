@@ -4837,6 +4837,90 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   list-style: square;
 }
 
+.beltCatControlPanel {
+  width:100%;
+  border-bottom: 1px solid lightgray;
+  padding-bottom:10px;
+  margin-bottom:10px;
+  display: flex;
+  justify-content: end;
+}
+
+.vue_chenge_btn {
+  padding: 3px 10px;
+  color: gray;
+  border:1px solid gray;
+  margin-left: 10px;
+  
+}
+
+.v_select{
+  border: 1px solid #AE0018;
+  background-color: #AE0018;
+  color:white;
+}
+
+.beltCatWrapper {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.beltCatWrapper .hab_belt_blk{ 
+  flex: 0 1 23%;
+  display: flex;
+  flex-direction: column;
+  border:1px solid lightgray;
+  margin-bottom: 2%;
+  cursor:pointer;
+}
+
+.hab_belt_blk .image {
+  width:100%;
+  height: 100px;
+  display: flex;
+}
+
+.hab_belt_blk .image img{ 
+  height: 100%;
+  width: auto;
+  margin: auto;
+  padding: 10px;
+}
+
+.hab_belt_blk .title {
+  margin: 10px 0;
+  width:100%;
+  color:black;
+}
+
+.beltCatWrapper_list .hab_belt_blk .tolsh,
+.beltCatWrapper_list .hab_belt_blk .sila_t,
+.beltCatWrapper_list .hab_belt_blk .val_min,
+.beltCatWrapper_list .hab_belt_blk .material,
+.beltCatWrapper_list .hab_belt_blk .np,
+.beltCatWrapper_list .hab_belt_blk .count_sl,
+.beltCatWrapper_list .hab_belt_blk .count_tyg_sl,
+.hab_belt_blk .dop
+{ 
+  display: none;
+}
+
+.beltCatWrapper_table {
+  flex-direction: column;
+  width:100%
+}
+
+.beltCatWrapper_table .hab_belt_blk{ 
+  flex-direction: row;
+  display: flex;
+}
+
+.beltCatWrapper_table .hab_belt_blk div{ 
+  flex:0 1 12%;
+}
+
 @media (max-width: 460px) {
   .block__map {
     height: 300px; }

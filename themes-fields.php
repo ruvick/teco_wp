@@ -51,6 +51,22 @@ Container::make('term_meta', 'as_term_catalog', 'Дополнительные п
 
   ));
 
+Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
+->show_on_template(array( 'single-belt-habasit.php'))
+    ->add_fields(array(   
+        Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
+        Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
+        Field::make('image', 'belt_item_img_2', 'Изображение 2' )->set_width(50),
+        Field::make('text', 'belt_tolsh', 'Толщина')->set_width(50),
+        Field::make('text', 'belt_sila_t', 'Сила тяги (k1%)')->set_width(50),    
+        Field::make('text', 'belt_val_min', 'Вал (min)')->set_width(50),
+        Field::make('text', 'belt_material', 'Материал')->set_width(50),     
+        Field::make('text', 'belt_np', 'Нож. переход')->set_width(100),    
+        Field::make('text', 'belt_count_sl', 'Колличество слоев')->set_width(100),
+        Field::make('text', 'belt_tyg_sl', 'Тяг. слой')->set_width(100),
+        Field::make('text', 'belt_dop', 'Дополнительно')->set_width(100)             
+));
+
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
   ->show_on_template(array( 'single-belt.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php', 'single-prutkovie.php'))
       ->add_fields(array(   

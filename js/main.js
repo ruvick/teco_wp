@@ -308,6 +308,32 @@ function to_crm(name = '', tel = '', obj = '') {
 
 // CRM END--------------------------------------------------------------------------------------------------------------------------------------
 
+let selectBtnTable = document.querySelector(".v_intable");
+let selectBtnList = document.querySelector(".v_select");
+if (selectBtnTable)
+	selectBtnTable.onclick = () => {
+		selectBtnTable.classList.add("v_select")
+		selectBtnList.classList.remove("v_select")
+
+		let panels = document.querySelector(".beltCatWrapper")
+
+
+		panels.classList.remove("beltCatWrapper_list")
+		panels.classList.add("beltCatWrapper_table")
+	
+	}
+
+
+if (selectBtnList)
+	selectBtnList.onclick = () => {
+		selectBtnTable.classList.remove("v_select")
+		selectBtnList.classList.add("v_select")
+
+		let panels = document.querySelector(".beltCatWrapper")
+
+		panels.classList.add("beltCatWrapper_list")
+		panels.classList.remove("beltCatWrapper_table")
+	}
 
 
 
