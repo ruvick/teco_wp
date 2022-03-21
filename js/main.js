@@ -335,7 +335,38 @@ if (selectBtnList)
 		panels.classList.remove("beltCatWrapper_table")
 	}
 
+let habCard = document.querySelectorAll(".hab_belt_blk");
+let habWinWrapper = document.querySelector(".habWinWrapper");
+let habWin = document.querySelector(".habWin");
+Array.from(habCard).forEach((element, index) => {
+	element.onclick = () => {
+		console.log("111");
+		document.querySelector(".habWinWrapper .habWin h2").innerHTML = element.querySelector(".title .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .bigImg").innerHTML = element.querySelector(".image").innerHTML
+		
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .tolsh .content_m").innerHTML = element.querySelector(".tolsh .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .sila_t .content_m").innerHTML = element.querySelector(".sila_t .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .val_min .content_m").innerHTML = element.querySelector(".val_min .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .material .content_m").innerHTML = element.querySelector(".material .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .np .content_m").innerHTML = element.querySelector(".np .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .count_sl .content_m").innerHTML = element.querySelector(".count_sl .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .count_tyg_sl .content_m").innerHTML = element.querySelector(".count_tyg_sl .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .dop .content_m").innerHTML = element.querySelector(".dop .content_m").textContent
+		
+		document.querySelector(".habWinWrapper").style.display = "block"
+	}
+})
 
+if (habWinWrapper)
+	habWinWrapper.onclick = () => {
+		console.log(11)
+		document.querySelector(".habWinWrapper").style.display = "none"
+	}
+
+if (habWin)
+	habWin.onclick = (e) => {
+		e.stopPropagation()
+	}
 
 // Отправщик ----------------------------------------------------------------------------
 document.addEventListener("DOMContentLoaded", () => {

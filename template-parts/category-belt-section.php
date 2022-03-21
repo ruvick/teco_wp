@@ -1,3 +1,54 @@
+<div class="habWinWrapper">
+	<div class="habWin">
+		<h2></h2>
+		<div class="bigImg"></div>
+		
+			<div class="carecter_in_win">
+
+				<div class="tolsh">
+					<span class = "mobile_title">Толщина:</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="sila_t">
+					<span class = "mobile_title">Сила тяги (k1%):</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="val_min">
+					<span class = "mobile_title">Вал (min):</span> 
+					<span class = "content_m"></span>
+				</div>
+				
+				<div class="material">
+					<span class = "mobile_title">Материал:</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="np">
+					<span class = "mobile_title">Нож. переход:</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="count_sl">
+					<span class = "mobile_title">Колличество слоев:</span> 
+					<span class = "content_m"></span>
+				</div>
+				
+				<div class="count_tyg_sl">
+					<span class = "mobile_title">Тяг. слой:</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="dop">
+					<span class = "mobile_title">Дополнительно:</span> 
+					<span class = "content_m"></span>
+				</div>
+			</div>
+		
+	</div>
+</div>
+
 <section id="catalog" class="catalog">
     <div class="_container">
 		<div class="beltCatControlPanel">
@@ -30,47 +81,47 @@
 
 						<div class="title"> 
 							<span class = "mobile_title">Артикул:</span> 
-							<? the_title(); ?>
+							<span class = "content_m"><? the_title(); ?></span>
 						</div>
 
 						<div class="tolsh">
 							<span class = "mobile_title">Толщина:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_tolsh"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_tolsh"); ?></span>
 						</div>
 
 						<div class="sila_t">
 							<span class = "mobile_title">Сила тяги (k1%):</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_sila_t"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_sila_t"); ?></span>
 						</div>
 
 						<div class="val_min">
 							<span class = "mobile_title">Вал (min):</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_val_min"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_val_min"); ?></span>
 						</div>
 						
 						<div class="material">
 							<span class = "mobile_title">Материал:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_material"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_material"); ?></span>
 						</div>
 
 						<div class="np">
 							<span class = "mobile_title">Нож. переход:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_np"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_np"); ?></span>
 						</div>
 
 						<div class="count_sl">
 							<span class = "mobile_title">Колличество слоев:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_count_sl"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_count_sl"); ?></span>
 						</div>
 						
 						<div class="count_tyg_sl">
 							<span class = "mobile_title">Тяг. слой:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_tyg_sl"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_tyg_sl"); ?></span>
 						</div>
 
 						<div class="dop">
 							<span class = "mobile_title">Дополнительно:</span> 
-							<? echo carbon_get_post_meta(get_the_ID(), "belt_dop"); ?>
+							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_dop"); ?></span>
 						</div>
 					</div>	
 
