@@ -4917,8 +4917,40 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   display: flex;
 }
 
+.beltCatWrapper_table .hab_belt_blk .title{ 
+  margin:0;
+}
+
+
+.beltCatWrapper .hab_belt_blk div .mobile_title{ 
+  display: none;
+}
+
 .beltCatWrapper_table .hab_belt_blk div{ 
   flex:0 1 12%;
+  padding: 10px;
+  border-right: 1px solid lightgray;
+}
+
+.beltCatWrapper_table .hab_belt_blk div:last-child{ 
+  border-right: none;
+ }
+
+.beltCatWrapper_table .hab_belt_blk .image{ 
+  padding:0 10px 0 0;
+}
+
+.beltCatWrapper_table .hab_belt_blk .image img{ 
+  padding: 0;
+  margin: 0;
+}
+
+.beltCatWrapper_list .hab_belt_blk_head {
+  display: none;
+}
+
+.hab_belt_blk_head {
+  font-weight: bold;
 }
 
 @media (max-width: 460px) {
@@ -6024,6 +6056,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     -webkit-box-flex: 0;
         -ms-flex: 0 1 49.3%;
             flex: 0 1 49.3%;
+  }
+  .beltCatWrapper .hab_belt_blk {
+    flex: 0 1 45%;
   }
 }
 
