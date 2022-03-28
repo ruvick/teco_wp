@@ -5299,6 +5299,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
  }
 
  .header-index-new {
+   position: fixed;
+   width: 100%;
+   padding: 22px 0;
+   -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+           box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
    background: #fff;
  }
  .header-index-new .header__time-phone,
