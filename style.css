@@ -5323,9 +5323,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background: #AE0018;
 }
 
+.slider-main {
+  padding-top: 100px;
+}
 
-
-
+.slider-bg__slide {
+  padding: 130px 0 230px 0;
+}
 
 
 
