@@ -135,6 +135,15 @@ a:hover {
   text-decoration: none;
 }
 
+.redLabel {
+  color: #AE0018;
+}
+
+.redLabel:hover {
+  text-decoration: underline;
+}
+
+
 ul li {
   list-style: none;
 }
@@ -5239,6 +5248,8 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .about__title {
   margin-bottom: 25px;
 }
+
+.about p,
 .about__descp {
   margin-bottom: 15px;
 }

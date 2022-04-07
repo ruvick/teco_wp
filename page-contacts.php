@@ -30,7 +30,7 @@ get_header(); ?>
 		<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><li>Адрес: <strong><? echo $adr; ?></strong></li><?}?>
 		<? $inn = carbon_get_theme_option("as_inn"); if (!empty($inn)){?><li>ИНН: <strong><? echo $inn; ?></strong></li><?}?>
 		<? $kpp = carbon_get_theme_option("as_kpp"); if (!empty($kpp)){?><li>КПП: <strong><? echo $kpp; ?></strong></li><?}?>
-		<? $ogrn = carbon_get_theme_option("as_orgn"); if (!empty($ogrn)){?><li>ОРГН: <strong><? echo $ogrn; ?></strong></li><?}?>
+		<? $ogrn = carbon_get_theme_option("as_orgn"); if (!empty($ogrn)){?><li>ОГРН: <strong><? echo $ogrn; ?></strong></li><?}?>
 		<? $rs = carbon_get_theme_option("as_rs"); if (!empty($rs)){?><li>Р/С: <strong><? echo $rs; ?></strong></li><?}?>
 		<? $ks = carbon_get_theme_option("as_ks"); if (!empty($ks)){?><li>К/С: <strong><? echo $ks; ?></strong></li><?}?>
 		<? $bik = carbon_get_theme_option("as_bik"); if (!empty($bik)){?><li>БИК: <strong><? echo $bik; ?></strong></li><?}?>

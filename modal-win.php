@@ -24,7 +24,7 @@
 								<input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля" data-value="Имя*" class="popup__form-input input _req _name">
 								<input id="tel2" autocomplete="off" type="text" name="tel" data-error="Заполните поля" data-value="Телефон*" class="popup__form-input input _phone _req _tel">
 							</div>
-							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a href="#">политикой
+							<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a class = "redLabel" target = "_blank" href="<?echo get_the_permalink(3);?>">политикой
 									конфиденциальности</a></p>
 							<button type = "button" class="popup__form-btn form__btn btn u_send">Заказать</button>
 						</form>
