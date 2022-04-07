@@ -28,7 +28,8 @@ get_header(); ?>
       <div class ="posts__content ">
         <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
         <picture>
-          <?php echo get_the_post_thumbnail( $post->ID, "turImg", array("alt" => $post->post_title, "title" => $post->post_title));?>
+          <?php //echo get_the_post_thumbnail( $post->ID, "turImg", array("alt" => $post->post_title, "title" => $post->post_title));?>
+          <picture><img src="<?php echo wp_get_attachment_image_src(carbon_get_post_meta(get_the_ID(),"singlebanner_img_1"), 'full')[0]; ?>" alt=""></picture>
         </picture>
         <?php the_content();?>
         <?php endwhile;?>

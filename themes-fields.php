@@ -140,6 +140,12 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
 
   ));
 
+  Container::make('post_meta', 'singlebanner', 'Поля для записи')
+  ->show_on_template(array('single-progect.php'))
+      ->add_fields(array(   
+        Field::make('image', 'singlebanner_img_1', 'Баннер' )->set_width(100),
+  ));
+
   // Container::make('post_meta', 'belt_param', 'Клиновые ремни')
   // ->show_on_template(array('single-belt-charect.php'))
   //     ->add_fields(array(   
