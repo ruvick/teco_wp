@@ -5,8 +5,8 @@
 
 			<a href="<? bloginfo("url"); ?>" class="logo-icon footer__logo"></a>
 
-			<?php wp_nav_menu( array('theme_location' => 'menu_main','menu_class' => 'menu-list footer__menu-list d-flex',
-			    'container_class' => 'menu-list footer__menu-list d-flex','container' => false )); ?>
+			<?php wp_nav_menu( array('theme_location' => 'menu_main_fut','menu_class' => 'menu-list footer__menu-list d-flex',
+			    'container_class' => 'menu-list footer__menu-list d-flex','container' => false )); ?> 
 
 			<div class="contacts d-flex">
 			<? $tel = carbon_get_theme_option("as_phones_1"); 
