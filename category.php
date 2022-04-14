@@ -21,7 +21,7 @@
 	<?
 		$category_id = get_queried_object()->term_id;
 
-		if (in_array($category_id, [6,0])) {
+		if (in_array($category_id, [6,23,24,25])) {
 			get_template_part('template-parts/category-belt', 'section');
 		} else
 			get_template_part('template-parts/category-main', 'section');

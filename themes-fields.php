@@ -57,14 +57,21 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
         Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
         Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
         Field::make('image', 'belt_item_img_2', 'Изображение 2' )->set_width(50),
-        Field::make('text', 'belt_tolsh', 'Толщина')->set_width(50),
-        Field::make('text', 'belt_sila_t', 'Сила тяги (k1%)')->set_width(50),    
-        Field::make('text', 'belt_val_min', 'Вал (min)')->set_width(50),
-        Field::make('text', 'belt_material', 'Материал')->set_width(50),     
-        Field::make('text', 'belt_np', 'Нож. переход')->set_width(100),    
+        
         Field::make('text', 'belt_count_sl', 'Колличество слоев')->set_width(100),
-        Field::make('text', 'belt_tyg_sl', 'Тяг. слой')->set_width(100),
-        Field::make('text', 'belt_dop', 'Дополнительно')->set_width(100)             
+        Field::make('text', 'belt_sila_t', 'Нагруз­ка при 1% растя жении ­Н/мм')->set_width(50), 
+        Field::make('text', 'belt_tolsh', 'Толщина')->set_width(100),
+        Field::make('text', 'belt_material', 'Материал')->set_width(100), 
+        
+        Field::make('text', 'belt_material_rabpov', 'Материал рабочей поверхности')->set_width(100), 
+        Field::make('text', 'belt_material_privpov', 'Материал приводной поверхности')->set_width(100), 
+        Field::make('text', 'belt_minval', 'Min дипметр вала')->set_width(100), 
+        Field::make('text', 'belt_d_obr_val', 'Диаметр обратного вала')->set_width(100), 
+        Field::make('text', 'belt_t', 'Рабочая температура')->set_width(100), 
+        Field::make('text', 'belt_color', 'Цвет рабочей поверхности')->set_width(100), 
+        Field::make('text', 'belt_antista', 'Антистатичность')->set_width(100), 
+
+                     
 ));
 
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')

@@ -4950,7 +4950,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   padding: 10px;
   border-right: 1px solid lightgray;
 }
-
+.beltCatWrapper_table .hab_belt_blk .count_tyg_sl,
 .beltCatWrapper_table .hab_belt_blk div:last-child {
   border-right: none;
 }

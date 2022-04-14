@@ -21,6 +21,7 @@
     "send_modal": "scp -C modal-win.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "mk_part_carbon": "ssh tec1687636@ssh.tec1687636.nichost.ru \"mkdir -p teko.msk.ru//docs/wp-content/themes/teco/inc\"",
     "send_pars": "scp -C -r pars tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
+    "send_pars_code": "scp -C -r pars/parse_habasit.php tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/pars/",
     "send_carbon": "scp -C -r inc tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/",
     "send_carbon_fild": "scp -C -r inc/custom-fields-options tec1687636@ssh.tec1687636.nichost.ru:teko.msk.ru//docs/wp-content/themes/teco/inc/",
     "mk_part_dir": "ssh tec1687636@ssh.tec1687636.nichost.ru \"mkdir -p teko.msk.ru//docs/wp-content/themes/teco/template-parts\"",
