@@ -18,18 +18,25 @@
 				<? echo $args['cat']->name ?>
 			</h4>
 			<ul class="products-sec__card-descp-list">
+			<?
+				$categories = get_categories( [
+					'taxonomy'     => 'category',
+					'type'         => 'post',
+					'child_of'     => $args['cat']->term_id,
+					'orderby'      => 'name',
+					'order'        => 'ASC',
+					'hide_empty'   => 0,
+					'hierarchical' => 1,
+				] );
+
+				if( $categories ){
+					foreach( $categories as $cat ){
+			?>
+					<li class="products-sec__card-descp-list-item"><a href = "<? echo get_category_link($cat->term_id)?>"><?echo $cat->name;?></a></li>
 				<?
-						$my_posts = get_posts([
-						'numberposts' => 3,
-						'category' => $args['cat']->term_id,
-						'orderby' => 'date',
-							'order' => 'DESC',
-							]);
-					 
-					foreach( $my_posts as $pst ){
+						}
+					}
 				?>
-					<li class="products-sec__card-descp-list-item"><a href = "<? echo get_the_permalink($pst->ID)?>"><? echo $pst->post_title?></a></li>
-				<?}?>
 			</ul>
 		</div>
 		<div class="products-sec__card-btn">

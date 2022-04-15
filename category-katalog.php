@@ -31,7 +31,10 @@
             ]);
 
             foreach( $categories as $cat ){
-              get_template_part('template-parts/main', 'catalog-element', ["cat" => $cat]);
+              if ($cat->term_id == 6)
+                get_template_part('template-parts/main', 'catalog-element-habasit', ["cat" => $cat]);  
+              else 
+                get_template_part('template-parts/main', 'catalog-element', ["cat" => $cat]); 
             }
           ?>
         </div>

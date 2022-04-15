@@ -5018,6 +5018,31 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   justify-content: space-between;
 }
 
+.habasitBeltAllWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.hbkElement img{ 
+  border-bottom: 1px solid lightgray;
+}
+
+.hbkElement h2{ 
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 120%;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.hbkElement {
+  flex: 0 32%;
+  border: 1px solid lightgray;
+  display: table;
+}
+
+
 @media (max-width: 460px) {
   .block__map {
     height: 300px;
@@ -6401,6 +6426,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
   .beltCatWrapper_table .hab_belt_blk .image img {
     margin: auto;
+  }
+
+  .habasitBeltAllWrapper {
+    flex-direction: column;
+  }
+
+  .hbkElement {
+    margin: 10px 0;
   }
 }
 
