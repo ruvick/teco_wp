@@ -5476,6 +5476,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
 .spollers-block__descp {
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .spollers-block__descp-title {
@@ -5714,6 +5715,24 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
   .header__menu-list::after {
     display: none;
+  }
+
+  .job__banner {
+    padding: 35px 20px;
+    background-position: 100%;
+  }
+
+  .job__banner-title {
+    margin: 0 0 15px 0 !important;
+  }
+
+  .job__banner-subtitle {
+    max-width: 100% !important;
+    margin-bottom: 10px !important;
+  }
+
+  .job__banner-btn {
+    margin-top: 15px;
   }
 }
 
@@ -6370,6 +6389,34 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   .icon-menu {
     order: 3;
   }
+
+  .job-descp__spollers-block .spollers-block__item {
+    padding: 15px 0;
+  }
+
+  .spollers-block__descp-title {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .spollers-block__descp-conditions-salary,
+  .spollers-block__descp-conditions-schedule {
+    font-size: 18px;
+  }
+
+  .spollers-block__descp-conditions-schedule {
+    margin-right: 20px;
+  }
+
+  .spollers-block__descp-conditions {
+    flex-wrap: wrap;
+  }
+
+  .job-spollers-block__body-list-item {
+    font-size: 16px;
+    line-height: 23px;
+    margin-bottom: 8px;
+  }
 }
 
 @media (max-width: 730px) {
@@ -6384,6 +6431,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
     -ms-flex: 0 1 49.5%;
     flex: 0 1 49.5%;
   }
+
 }
 
 @media (max-width: 700px) {
@@ -6691,6 +6739,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
   .product-sec-charect__wrap-img-block-image:last-child {
     border-bottom: none;
+  }
+
+  .job__banner-btn {
+    width: 100%;
   }
 }
 
