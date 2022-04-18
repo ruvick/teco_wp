@@ -75,7 +75,7 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
 ));
 
  Container::make('post_meta', 'belt_param', 'Набор конвейерных лент')
-  ->show_on_template(array( 'single-belt.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php', 'single-prutkovie.php'))
+  ->show_on_template(array( 'single-belt.php', 'single-podshipniki.php', 'single-belt-modul.php', 'single-prutkovie-komplekt.php', 'single-prutkovie.php'))
       ->add_fields(array(   
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
