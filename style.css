@@ -5545,8 +5545,13 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background: #A3A3A3;
 } */
 
+.product-sec__row-table p {
+  margin-bottom: 20px;
+}
 
-
+.product-sec__row-table p:last-child {
+  margin-bottom: 0;
+}
 
 
 
@@ -6746,6 +6751,10 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
   .job__banner-btn {
     width: 100%;
+  }
+
+  .job__banner {
+    background-position: 0;
   }
 }
 
