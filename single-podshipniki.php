@@ -36,7 +36,7 @@ get_header(); ?>
                         $beltIndex = 0;
                         foreach ($belt as $item) {
                 ?>
-                    <h2 class = "sub_position_head"><?echo $item['belt_item_title']?></h2>
+                    <!-- <h2 class = "sub_position_head"><?echo $item['belt_item_title']?></h2> -->
                     <div class="product-sec__row">
 
                         <div class="product-sec__img product-sec__img_sm">
