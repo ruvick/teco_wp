@@ -4555,7 +4555,8 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  margin-bottom: 87px;
+  /* margin-bottom: 87px; */
+  margin-bottom: 10px;
 }
 
 
@@ -4601,7 +4602,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 }
 
 .product-sec__row-table {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .product-sec-charect__wrap-table table,
@@ -5540,7 +5541,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 0;
 }
 
-
+/* .product-sec__row-table tr:first-child {
+  background: #A3A3A3;
+} */
 
 
 
