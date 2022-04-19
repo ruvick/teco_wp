@@ -5519,16 +5519,16 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 10px;
 }
 
-.job-spollers-block__body-list {
+.job-spollers-block__body ul {
   padding-left: 25px;
   margin-bottom: 30px;
 }
 
-.job-spollers-block__body-list:last-child {
+.job-spollers-block__body ul:last-child {
   margin-bottom: 0;
 }
 
-.job-spollers-block__body-list-item {
+.job-spollers-block__body ul li {
   font-size: 16px;
   line-height: 34px;
   color: #000;
@@ -5536,7 +5536,7 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   margin-bottom: 10px;
 }
 
-.job-spollers-block__body-list-item:last-child {
+.job-spollers-block__body ul li:last-child {
   margin-bottom: 0;
 }
 
