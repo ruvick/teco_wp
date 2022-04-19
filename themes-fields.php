@@ -140,7 +140,8 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
         ->add_fields( array(
           Field::make('text', 'vacancies_name', 'Наименование вакансии')->set_width(100),
           Field::make('rich_text', 'vacancies_duties', 'Обязанности')->set_width(50),    
-          Field::make('rich_text', 'vacancies_requirements', 'Требования')->set_width(50),     
+          Field::make('rich_text', 'vacancies_requirements', 'Требования')->set_width(50),  
+          Field::make('text', 'vacancies_schedule', 'График')->set_width(50),    
           Field::make('rich_text', 'vacancies_salary', 'Заработная плата')->set_width(50), 
       ) ),
     
