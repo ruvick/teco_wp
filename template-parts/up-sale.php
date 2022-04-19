@@ -1,6 +1,6 @@
 <section id="similar-products" class="similar-products">
         <div class="_container">
-          <h2 class="similar-products__title">Смотрите так же:</h2>
+          <h2 class="similar-products__title">Смотрите также:</h2>
 
           <div class="similar-products__row product">
           <?php 
