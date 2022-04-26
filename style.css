@@ -3508,7 +3508,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .menu-list a {
   display: block;
   font-family: "MyriadPro";
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 400;
   padding: 5px 0 5px 41px;
 }
@@ -5563,10 +5563,52 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 
+.contact_phones {
+  display: flex;
+  margin-bottom: 20px;
+  line-height: 1;
+}
 
+.contact_phones .phone{
+  width:300px;
+  font-size: 32px;
+}
 
+.contact_phones .phone a{ 
 
+}
 
+.contact_phones .comment{
+  width:auto;
+  
+}
+
+.contact_h2 {
+  font-size: 18px;
+  color:gray;
+  margin-top: 20px!important;
+  margin-bottom: 20px!important;
+}
+
+.contact_table {
+  margin-bottom: 20px;
+}
+
+.contact_table tr td{
+  padding: 5px 0;
+}
+
+.contact_table tr td:first-child{
+  width:100px;
+}
+
+.form_in_page {
+  max-width:40%;
+}
+
+.form_in_page input{ 
+  background-color: white;
+}
 
 @media (min-width: 991.98px) {
 
@@ -5901,6 +5943,11 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 @media (max-width: 768px) {
+
+  .form_in_page {
+    max-width:100%;
+  }
+
   h1 {
     font-size: 26px;
   }
@@ -6555,6 +6602,15 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 @media (max-width: 515px) {
+
+  .contact_phones {
+    flex-direction: column;
+  }
+
+  .contact_phones br{ 
+    display: none;
+  }
+
   .popup__img {
     display: none;
   }
