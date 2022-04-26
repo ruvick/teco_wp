@@ -16,11 +16,16 @@
 			<div class="slider-bg__slide slider__slide slider-main__slide" style="background-image: url(<?php echo wp_get_attachment_image_src($item['slider_img'], 'full')[0]; ?>);">
 				<!-- <div class="nuar_blk"></div> -->
 				<div class="slider-bg__container _container">
-					<h1 class="slider-bg__title"><? echo $item['slider_title']; ?>
+					<h1 class="slider-bg__title">
+						<? echo $item['slider_title']; ?>
 						<span>
 						<? echo $item['slider_subtitle']; ?>
 						</span>
 					</h1>
+					<div class = "slider-btn-blk">
+						<a href="<? echo $item['slider_lnk'] ?>" class=" _popup-link	btn">Подробнее</a>
+						<a href="#callback" class=" _popup-link	btn">Оставить заявку</a>
+					</div>
 				</div>
 			</div>
 		<?

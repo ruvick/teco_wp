@@ -3508,7 +3508,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .menu-list a {
   display: block;
   font-family: "MyriadPro";
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   padding: 5px 0 5px 41px;
 }
@@ -3553,7 +3553,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 
 .contacts__time-phone {
   font-family: "MyriadPro";
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 400;
   line-height: 14.4px;
 }
@@ -3858,6 +3858,7 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
 .slider-bg__title {
   color: #fff;
   font-weight: 100;
+  font-size: 56px;
 }
 
 .slider-bg__title span {
@@ -5044,6 +5045,14 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   display: table;
 }
 
+.slider-btn-blk {
+  margin-top: 30px;
+}
+
+.slider-btn-blk a:first-child{ 
+  margin-left: 0;
+  margin-right: 15px;
+}
 
 @media (max-width: 460px) {
   .block__map {
@@ -5898,6 +5907,9 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 
   h2 {
     font-size: 24px;
+  }
+  .slider-bg__title {
+    font-size: 26px;
   }
 
   .header {

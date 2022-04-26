@@ -192,7 +192,9 @@ Container::make( 'theme_options', __( 'Настройки темы', 'crb' ) )
           Field::make('text', 'slider_title', 'Заголовок слайдера')
             ->set_width(50),
           Field::make('text', 'slider_subtitle', 'Подзаголовок слайдера')
-            ->set_width(50),
+            ->set_width(100),
+          Field::make('text', 'slider_lnk', 'Ссылка на раздел')
+            ->set_width(100),
         ))
     ))
     ->add_tab('Команда', array(
