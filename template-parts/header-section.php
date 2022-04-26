@@ -11,7 +11,8 @@
 
         <div class="contacts header__contacts d-flex">
         <? $tel = carbon_get_theme_option("as_phones_1"); 
-					if (!empty($tel)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a><?}?>          <p class="contacts__time-phone header__time-phone">Бесплатный звонок по России</p>
+					if (!empty($tel)){?><a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="contacts__phone header__phone"><? echo $tel; ?></a><?}?>          
+          <p class="contacts__time-phone header__time-phone"><a style = "color:white" href="mailto:<?echo carbon_get_theme_option("as_email");?>"><?echo carbon_get_theme_option("as_email");?></a></p>
         </div>
         <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-phone-icon header__mob-phone-icon"></a>
 

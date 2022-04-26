@@ -352,6 +352,8 @@ Array.from(habCard).forEach((element, index) => {
 		document.querySelector(".habWinWrapper .habWin .carecter_in_win .count_sl .content_m").innerHTML = element.querySelector(".count_sl .content_m").textContent
 		document.querySelector(".habWinWrapper .habWin .carecter_in_win .count_tyg_sl .content_m").innerHTML = element.querySelector(".count_tyg_sl .content_m").textContent
 		document.querySelector(".habWinWrapper .habWin .carecter_in_win .dop .content_m").innerHTML = element.querySelector(".dop .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .dop .content_m").innerHTML = element.querySelector(".dop .content_m").textContent
+		document.querySelector(".habWinWrapper .habWin .carecter_in_win .lnk .content_m").innerHTML = element.querySelector(".lnk .content_m").innerHTML
 		
 		document.querySelector(".habWinWrapper").style.display = "block"
 	}

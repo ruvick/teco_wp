@@ -41,7 +41,12 @@
 				</div>
 
 				<div class="dop">
-					<span class = "mobile_title">Дополнительно:</span> 
+					<span class = "mobile_title">Цвет поверхности:</span> 
+					<span class = "content_m"></span>
+				</div>
+
+				<div class="lnk">
+					<span class = "mobile_title">Подробно:</span> 
 					<span class = "content_m"></span>
 				</div>
 			</div>
@@ -125,6 +130,11 @@
 						<div class="dop">
 							<span class = "mobile_title">Цвет рабочей поверхности:</span> 
 							<span class = "content_m"><? echo carbon_get_post_meta(get_the_ID(), "belt_color"); ?></span>
+						</div>
+
+						<div class="lnk" style = "display:none">
+							<span class = "mobile_title">Подробно:</span> 
+							<span class = "content_m"> <a style = "color: #AE0018" target="_blank" href="<? echo carbon_get_post_meta(get_the_ID(), "belt_lnk"); ?>">Скачать</a> </span>
 						</div>
 					</div>	
 

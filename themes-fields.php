@@ -70,6 +70,7 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
         Field::make('text', 'belt_t', 'Рабочая температура')->set_width(100), 
         Field::make('text', 'belt_color', 'Цвет рабочей поверхности')->set_width(100), 
         Field::make('text', 'belt_antista', 'Антистатичность')->set_width(100), 
+        Field::make('text', 'belt_lnk', 'Ссылка')->set_width(100), 
 
                      
 ));
