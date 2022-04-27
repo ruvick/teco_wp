@@ -18,33 +18,34 @@ get_header(); ?>
 				yoast_breadcrumb( '<p id="breadcrumbs">','</p>' );
 			}
 			?> 
-				<h1 class="title-navigation__title"><?php the_title();?></h1>
+				<h1 class="title-navigation__title title-mar-big"><?php the_title();?></h1>
 
 		</div>
 	</section>
 	
 	<section class="content">
 		<div class="_container">
+			<h2 class="contact_h2">Телефон службы поддержки</h2>
 			<div class="contact_phones">
 				<div class="phone">
 					<a href="tel:<? $tel = carbon_get_theme_option("as_phones_1"); echo preg_replace('/[^0-9]/', '', $tel); ?>"><? echo $tel; ?></strong></a>
 				</div>
-				<div class="comment">Телефон службы <br/>поддержки</div>
 			</div>
-			
+
+			<h2 class="contact_h2">Электронная почта</h2>
 			<div class="contact_phones">
 				<div class="phone">
-					<a href="tel:<? $tel2 = carbon_get_theme_option("as_phone_2"); echo preg_replace('/[^0-9]/', '', $tel2); ?>"><? echo $tel2; ?></strong></a>
+					<a href="mailto:<? $mail = carbon_get_theme_option("as_email"); echo $mail; ?>"><? echo $mail; ?></strong></a>
 				</div>
-				<div class="comment">Телефон <br/>офиса</div>
 			</div>
+			
 
 			<h2 class="contact_h2">Местоположение и почтовый адрес</h2>
 			<p>
-				<? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><? echo $adr; ?><?}?> <br/><a target = "_blank" style = "color: #AE0018" href="https://yandex.ru/maps/-/CCUFqOVoPC">Смотреть на карте</a>
+				<span class = "adress_contact"><? $adr = carbon_get_theme_option("as_address"); if (!empty($adr)){?><? echo $adr; ?><?}?></span> <br/><a target = "_blank" style = "color: #AE0018" href="https://yandex.ru/maps/-/CCUFqOVoPC">Смотреть на карте</a>
 			</p>
 
-			<h2 class="contact_h2">Обратная связь:</h2>
+			<!-- <h2 class="contact_h2">Обратная связь:</h2>
 			<div class="universal_form">
 				<form class = "form_in_page universal_send_form" action="">
 					<input id="name" autocomplete="off" type="text" name="name" data-error="Заполните поля" data-value="Имя*" class="popup__form-input input _req _name">
@@ -52,7 +53,7 @@ get_header(); ?>
 					<p class="popup__policy">Заполняя данную форму вы соглашаетесь с <a class="redLabel" target="_blank" href="http://teko.msk.ru/privacy-policy/">политикой конфиденциальности</a></p>
 					<button type="button" class="popup__form-btn form__btn btn u_send">Отправить</button>
 				</form>
-			</div>
+			</div> -->
 
 			<h2 class="contact_h2">Банковские реквизиты:</h2>
 			<table class = "contact_table">

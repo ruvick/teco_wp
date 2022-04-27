@@ -5333,22 +5333,31 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 .team__descp-link {}
 
 .mp-partner {
-  color: #AE0018;
+  color: white;
+  background-color: #AE0018;
+  padding: 20px 20px 20px 50px;
+  position: relative;
+  display: inline-block;
 }
 
 .mp-partner:before {
   content: "";
-  float: left;
+  display: inline-block;
   width: 20px;
-  flex: 0 0 20px;
   height: 20px;
   margin-right: 10px;
   background-position: 0 0;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-image: url('data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjMwIiB2aWV3Qm94PSIwIDAgMzAgMzAiIHdpZHRoPSIzMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjQUUwMDE4IiBkPSJNOC41IDE5aDEzYy4yNzcgMCAuNS4yMjMuNS41cy0uMjIzLjUtLjUuNWgtMTNjLS4yNzcgMC0uNS0uMjIzLS41LS41cy4yMjMtLjUuNS0uNXptMC00aDEzYy4yNzcgMCAuNS4yMjMuNS41cy0uMjIzLjUtLjUuNWgtMTNjLS4yNzcgMC0uNS0uMjIzLS41LS41cy4yMjMtLjUuNS0uNXptMC00aDEzYy4yNzcgMCAuNS4yMjMuNS41cy0uMjIzLjUtLjUuNWgtMTNjLS4yNzcgMC0uNS0uMjIzLS41LS41cy4yMjMtLjUuNS0uNXptMTAtOWMtLjI3Ni4wMDQtLjUwNC4yMjQtLjUuNXY0YzAgLjgyMi42NzggMS41IDEuNSAxLjVoNGMuNjY1IDAgLjY2LTEgMC0xaC00Yy0uMjg2IDAtLjUtLjIxNC0uNS0uNXYtNGMuMDA0LS4yODItLjIxOC0uNTA0LS41LS41em0tMTQtMkMzLjY3OCAwIDMgLjY3OCAzIDEuNXYyN2MwIC44MjIuNjc4IDEuNSAxLjUgMS41aDIxYy44MjIgMCAxLjUtLjY3OCAxLjUtMS41di0yMWMwLS4xMzMtLjA1My0uMjYtLjE0Ni0uMzU0bC03LTdDMTkuNzYuMDUzIDE5LjYzNCAwIDE5LjUgMHptMCAxaDE0Ljc5M0wyNiA3LjcwN1YyOC41YzAgLjI4Ni0uMjE0LjUtLjUuNWgtMjFjLS4yODYgMC0uNS0uMjE0LS41LS41di0yN2MwLS4yODYuMjE0LS41LjUtLjV6Ii8+PC9zdmc+');
+  background-image: url(img/doc.svg);
+  
+  position: absolute;
+  left: 18px;
 }
 
+.title-mar-big {
+  margin-top: 60px;
+}
 
 .siteInWork {
   position: fixed;
@@ -5584,10 +5593,19 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
 }
 
 .contact_h2 {
-  font-size: 18px;
+  font-size: 14px;
   color:gray;
-  margin-top: 20px!important;
-  margin-bottom: 20px!important;
+  font-weight: 500;
+  margin-top: 10px!important;
+  margin-bottom: 10px!important;
+}
+
+.adress_contact {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  display: inline-block;
+  line-height: 1;
 }
 
 .contact_table {
