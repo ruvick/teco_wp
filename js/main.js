@@ -608,12 +608,18 @@ function digi(str) {
 }
 //=================
 
+
+
 //Popups
 let popup_link = document.querySelectorAll('._popup-link');
 let popups = document.querySelectorAll('.popup');
+
+console.log(popup_link);
+
 for (let index = 0; index < popup_link.length; index++) {
 	const el = popup_link[index];
 	el.addEventListener('click', function (e) {
+		console.log(111);
 		if (unlock) {
 			let item = el.getAttribute('href').replace('#', '');
 			let name = el.getAttribute('data-objectname');
