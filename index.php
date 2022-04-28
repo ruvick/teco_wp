@@ -23,8 +23,8 @@
 						</span>
 					</h1>
 					<div class = "slider-btn-blk">
-						<a href="<? echo $item['slider_lnk'] ?>" class=" _popup-link	btn">Подробнее</a>
-						<a href="#callback" class=" _popup-link	btn">Оставить заявку</a>
+						<a href="<? echo $item['slider_lnk'] ?>" class="btn">Подробнее</a>
+						<a href="#callback" onclick = "popup_open('callback')" class="_popup-link	btn test_style">Оставить заявку</a>
 					</div>
 				</div>
 			</div>
@@ -48,6 +48,7 @@
 		<h2 class="about__title">
 			<? echo carbon_get_theme_option("about_home_title")?>
 		</h2>
+
 		<? echo apply_filters( 'the_content', carbon_get_theme_option("about_home"))?>
 	</div>
 </section>

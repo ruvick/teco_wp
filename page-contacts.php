@@ -92,6 +92,11 @@ get_header(); ?>
 						<td>ОГРН</td>
 						<td><?echo carbon_get_theme_option("as_orgn");?></td>
 					</tr>
+					
+					<tr>
+						<td>Почтовый индекс</td>
+						<td>121614</td>
+					</tr>
 
 				</tbody>
 			</table>

