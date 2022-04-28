@@ -81,8 +81,9 @@ Container::make('post_meta', 'belt_param', 'Набор конвейерных л
       Field::make( 'complex', 'belt_item', "Конвейерные ленты раздела" )
         ->add_fields( array(
           Field::make('text', 'belt_item_title', 'Заголовок')->set_width(100),
-          Field::make('image', 'belt_item_img', 'Изображение' )->set_width(50),
-          Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(50),
+          Field::make('image', 'belt_item_img', 'Изображение' )->set_width(30),
+          Field::make('image', 'belt_item_img_shem', 'Чертеж' )->set_width(30),
+          Field::make('rich_text', 'belt_item_description', 'Описание товара')->set_width(30),
           Field::make('rich_text', 'belt_item_table', 'Таблица характеристик')->set_width(100)      
       ) ),
   ));

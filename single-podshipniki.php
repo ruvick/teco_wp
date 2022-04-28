@@ -37,12 +37,17 @@ get_header(); ?>
                         foreach ($belt as $item) {
                 ?>
                     <!-- <h2 class = "sub_position_head"><?echo $item['belt_item_title']?></h2> -->
-                    <div class="product-sec__row">
+                    <div class="product-sec__row product-sec__row_podsh">
 
-                        <div class="product-sec__img product-sec__img_sm">
+                        <div class="product-sec__img product-sec__img_sm product-sec__img_podsh">
                             <picture>
                                 <!-- <source srcset="img/product-sl.webp" type="image/webp"> -->
-                                <img src="<?php echo wp_get_attachment_image_src($item['belt_item_img'], 'large')[0]; ?>" alt="">
+                                <img src="<?php echo wp_get_attachment_image_src($item['belt_item_img'], 'large')[0]; ?>" alt="<?php the_content();?>">
+                            </picture>
+
+                            <picture>
+                                <!-- <source srcset="img/product-sl.webp" type="image/webp"> -->
+                                <img src="<?php echo wp_get_attachment_image_src($item['belt_item_img_shem'], 'large')[0]; ?>" alt="<?php the_content();?>  - чертеж">
                             </picture>
                         </div>
 

@@ -4560,7 +4560,9 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   margin-bottom: 10px;
 }
 
-
+.product-sec__row_podsh {
+  margin-bottom: 30px;
+}
 
 .product-sec__img {
   -webkit-box-flex: 0;
@@ -4571,10 +4573,18 @@ body:not(.lg-from-hash) .lg-outer.lg-start-zoom .lg-item.lg-complete .lg-object 
   overflow: hidden;
 }
 
+.product-sec__img_podsh {
+  display: flex;
+}
+
 .product-sec__img_sm {
   height: auto;
 }
 
+
+.product-sec__img_podsh picture {
+  margin: auto;
+}
 
 .product-sec__img_sm img {
   height: inherit;
