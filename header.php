@@ -58,7 +58,7 @@
     <!-- Подключение  модальных окон-->
     <? include "modal-win.php";?>
 
-    <div class = "siteInWork">
+    <!-- <div class = "siteInWork">
         <span>САЙТ В РАЗРАБОТКЕ</span>
         <p>По всем вопросам<br/><a href="tel:<? echo $t = preg_replace('/[^0-9]/', '', carbon_get_theme_option("as_phones_1")); ?>"><?echo carbon_get_theme_option("as_phones_1")?></a></p>
-    </div>
+    </div> -->
