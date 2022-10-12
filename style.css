@@ -5451,8 +5451,22 @@ filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><fi
   background-image: url('img/icons/vk.svg');
 }
 
+.soc-icon-whatsapp {
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-image: url('img/icons/whatsapp.svg');
+}
+
 .soc-icon-vk_white {
   background-image: url('img/icons/vk-white.svg');
+}
+
+.soc-icon-whatsapp_white {
+  background-position: center;
+  background-size: 75%;
+  background-repeat: no-repeat;
+  background-image: url('img/icons/whatsapp-white.svg');
 }
 
 .job {}

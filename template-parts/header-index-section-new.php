@@ -17,6 +17,7 @@
         <a href="tel:<? echo preg_replace('/[^0-9]/', '', $tel); ?>" class="mob-phone-icon header__mob-phone-icon"></a>
 
         <a href="<?php echo carbon_get_theme_option('as_vk'); ?>" class="header__soc-block-icon-link soc-block-icon-link soc-icon-vk"></a>
+        <a href="<?php echo carbon_get_theme_option('as_whatsapp'); ?>" class="header__soc-block-icon-link soc-block-icon-link soc-icon-whatsapp"></a>
 
         <a href="#callback" class="header__popup-link _popup-link	btn">Заказать звонок</a>
 
